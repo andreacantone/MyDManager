@@ -1,26 +1,117 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96Q-1g-1rs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--My Calendar-->
+        <scene sceneID="isN-Xx-Kc9">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3h6-u5-5IX" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="qzN-AV-aR2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tOf-k7-h5x"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="kfq-rj-59a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="My Calendar" image="Calendar Icon" id="Hjn-qW-9Ng"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Id-cT-Rc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="868" y="415"/>
+        </scene>
+        <!--Item 4-->
+        <scene sceneID="A2R-SY-57z">
+            <objects>
+                <viewController id="opi-J8-fcR" userLabel="Item 4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ei4-jE-Tnm"/>
+                        <viewControllerLayoutGuide type="bottom" id="CwH-zc-Igt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T3m-UE-vuz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Food" image="Food Icon" id="tfh-CT-S5T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDG-qf-bfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="1114"/>
+        </scene>
+        <!--Item 3-->
+        <scene sceneID="Cn2-np-CPd">
+            <objects>
+                <viewController id="UrG-MA-lCb" userLabel="Item 3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PcN-48-hAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="TXo-kI-moU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6b2-MC-wO2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Charts" image="Chart Icon" id="bl8-zI-sYe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kE1-xh-ck2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="-958"/>
+        </scene>
+        <!--My Profile-->
+        <scene sceneID="fgB-N1-9RE">
+            <objects>
+                <viewController id="oP6-HN-7bq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yzZ-bK-GCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJt-RU-2cx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AcQ-6S-bdL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="Profile Icon" id="KV9-Ze-LHA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yJ-Bh-eYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="-266"/>
+        </scene>
+        <!--View Tab Bar Controller-->
+        <scene sceneID="eF1-HU-Ydk">
+            <objects>
+                <tabBarController id="96Q-1g-1rs" customClass="ViewTabBarController" customModule="My_Diabetic_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="x88-aU-nOx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oP6-HN-7bq" kind="relationship" relationship="viewControllers" id="Te5-mZ-3j3"/>
+                        <segue destination="3h6-u5-5IX" kind="relationship" relationship="viewControllers" id="NUu-iD-LRN"/>
+                        <segue destination="UrG-MA-lCb" kind="relationship" relationship="viewControllers" id="agA-T5-BsD"/>
+                        <segue destination="opi-J8-fcR" kind="relationship" relationship="viewControllers" id="PE2-sE-sE2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNR-hp-0KC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar Icon" width="27" height="27"/>
+        <image name="Chart Icon" width="27" height="27"/>
+        <image name="Food Icon" width="27" height="27"/>
+        <image name="Profile Icon" width="27" height="27"/>
+    </resources>
 </document>
