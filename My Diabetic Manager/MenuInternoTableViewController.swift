@@ -45,9 +45,9 @@ class MenuInternoTableViewController: UITableViewController {
     }
     
     var firstCourses = [
-        firstCourse(nome: "Boiled pasta", immagine: "boiledPasta"),
-        firstCourse(nome: "Rice salad", immagine: "riceSalad"),
-        firstCourse(nome: "Lasagna", immagine: "lasagna"),
+        firstCourse(nome: "Boiled pasta", immagine: "1"),
+        firstCourse(nome: "Rice salad", immagine: "4"),
+        firstCourse(nome: "Lasagna", immagine: "9"),
         ]
     
     var secondCourses = [
@@ -349,29 +349,43 @@ class MenuInternoTableViewController: UITableViewController {
                 var appoggio_2 = ""
                 let destinationController = segue.destination as!
                 ViewController
-                if (coursesName == "First courses"){
-                    appoggio_2 = firstCourses[indexPath.row].nome
-                }
-                else if (coursesName == "Second courses"){
-                    appoggio_2 = secondCourses[indexPath.row].nome
-                }
-                else if (coursesName == "Drinks"){
-                    appoggio_2 = drinks[indexPath.row].nome
-                }
-                else if (coursesName == "Side dishes"){
-                    appoggio_2 = sideCourses[indexPath.row].nome
-                }
-                else if (coursesName == "Sandwitches and pizzas"){
-                    appoggio_2 = sandAndPizzas[indexPath.row].nome
-                }
-                else if (coursesName == "Fruits"){
-                    appoggio_2 = fruits[indexPath.row].nome
-                }
-                else if (coursesName == "Desserts"){
-                    appoggio_2 = desserts[indexPath.row].nome
-                }
                 
-                destinationController.tupla.name = appoggio_2
+                if coursesName == "First courses"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredFirstCourses[indexPath.row].nome
+                    }else{appoggio_2 = firstCourses[indexPath.row].nome}
+                }
+                if coursesName == "Second courses"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredSecondCourses[indexPath.row].nome
+                    }else{appoggio_2 = secondCourses[indexPath.row].nome}
+                }
+                if coursesName == "Drinks"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredDrinks[indexPath.row].nome
+                    }else{appoggio_2 = drinks[indexPath.row].nome}
+                }
+                if coursesName == "Side dishes"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredSideCourses[indexPath.row].nome
+                    }else{appoggio_2 = sideCourses[indexPath.row].nome}
+                }
+                if coursesName == "Sandwitches and pizzas"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredSandAndPizzas[indexPath.row].nome
+                    }else{appoggio_2 = sandAndPizzas[indexPath.row].nome}
+                }
+                if coursesName == "Fruits"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredFruits[indexPath.row].nome
+                    }else{appoggio_2 = fruits[indexPath.row].nome}
+                }
+                if coursesName == "Desserts"{
+                    if searchController.isActive && searchController.searchBar.text != ""{
+                        appoggio_2 = filteredDesserts[indexPath.row].nome
+                    }else{appoggio_2 = desserts[indexPath.row].nome}
+                }
+                    destinationController.tupla.name = appoggio_2
                 
             }
         }
