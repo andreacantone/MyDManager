@@ -140,7 +140,7 @@ class ViewController: UIViewController, UIScrollViewDelegate,UIViewControllerTra
         
         
     }
-    
+
     
     func toggleButton(button:UIButton,onImage:UIImage,offImage:UIImage)  {
         if button.currentImage == offImage{

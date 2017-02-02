@@ -11,9 +11,6 @@
 		06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06630A4C1E43409C00D5A334 /* modifyProfile.swift */; };
 		AC8CE5111E43DB3F009D456B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8CE50C1E43DB31009D456B /* Charts.framework */; };
 		AC8CE5121E43DB3F009D456B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC8CE50C1E43DB31009D456B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC8CE5161E43DC42009D456B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8CE5151E43DC42009D456B /* LogInViewController.swift */; };
-		AC8CE5181E43DC6A009D456B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8CE5171E43DC6A009D456B /* RegisterViewController.swift */; };
-		AC8CE51A1E43DC6F009D456B /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8CE5191E43DC6F009D456B /* ProfiloUtente.swift */; };
 		AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93381E427A4C00928B4D /* AppDelegate.swift */; };
 		AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */; };
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
@@ -21,6 +18,9 @@
 		AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */; };
 		AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937B1E43369300928B4D /* ChartsViewController.swift */; };
 		ACF8D0AF1E43DE43005D6858 /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF8D0AE1E43DE43005D6858 /* Feature.xib */; };
+		ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */; };
+		ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */; };
+		ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */; };
 		DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C101E42877800F0861A /* MenuTableViewController.swift */; };
 		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
@@ -80,9 +80,6 @@
 		064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		06630A4C1E43409C00D5A334 /* modifyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyProfile.swift; sourceTree = "<group>"; };
 		AC8CE5051E43DB31009D456B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
-		AC8CE5151E43DC42009D456B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = "../../PROGETTO APP/MyDManager/My Diabetic Manager/LogInViewController.swift"; sourceTree = "<group>"; };
-		AC8CE5171E43DC6A009D456B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "../../PROGETTO APP/MyDManager/My Diabetic Manager/RegisterViewController.swift"; sourceTree = "<group>"; };
-		AC8CE5191E43DC6F009D456B /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfiloUtente.swift; path = "../../PROGETTO APP/MyDManager/My Diabetic Manager/ProfiloUtente.swift"; sourceTree = "<group>"; };
 		AC9E93351E427A4C00928B4D /* My Diabetic Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diabetic Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E93381E427A4C00928B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabBarController.swift; sourceTree = "<group>"; };
@@ -92,6 +89,9 @@
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9E937B1E43369300928B4D /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		ACF8D0AE1E43DE43005D6858 /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../../Downloads/Feature.xib; sourceTree = "<group>"; };
+		ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfiloUtente.swift; sourceTree = "<group>"; };
 		DE0D0C101E42877800F0861A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,9 +202,9 @@
 		AC9E937D1E43436A00928B4D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				AC8CE5151E43DC42009D456B /* LogInViewController.swift */,
-				AC8CE5171E43DC6A009D456B /* RegisterViewController.swift */,
-				AC8CE5191E43DC6F009D456B /* ProfiloUtente.swift */,
+				ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */,
+				ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */,
+				ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -334,15 +334,15 @@
 				AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */,
 				AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */,
 				DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */,
+				ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */,
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
-				AC8CE5161E43DC42009D456B /* LogInViewController.swift in Sources */,
-				AC8CE51A1E43DC6F009D456B /* ProfiloUtente.swift in Sources */,
 				F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */,
 				F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */,
-				AC8CE5181E43DC6A009D456B /* RegisterViewController.swift in Sources */,
 				DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */,
+				ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */,
 				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
 				06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */,
+				ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */,
 				064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
