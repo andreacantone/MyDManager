@@ -168,7 +168,8 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     
     
     //Salvo i nuovi dati del profilo modificati
-    @IBAction func save(_ sender: UIButton){
+    @IBAction func save(_ sender: UIBarButtonItem){
+        //roba per foto
         let imageData = UIImageJPEGRepresentation(pickedImaged.image!, 0.6)
         let compressJPEGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressJPEGImage!, nil, nil, nil)
