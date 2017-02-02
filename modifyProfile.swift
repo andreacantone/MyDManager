@@ -18,6 +18,7 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     @IBOutlet var newP: UITextField!
     @IBOutlet var newIm : UIImageView!
     @IBOutlet var save :  UIBarButtonItem!
+    @IBOutlet weak var pickedImaged: UIImageView!
 
     var newName : String = ""
     var newSurname : String = ""
@@ -44,10 +45,10 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         newIm.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
         newIm.image = UIImage(named: "ominopc")
         newIm.image = UIImage (named: newImage)
-        //
+        /*
         super.viewDidLoad()
         picker.delegate = self
-        
+        */
         
         // Do any additional setup after loading the view.
     }
@@ -74,7 +75,7 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         )
     }
     
-    
+    /*
     
     let picker = UIImagePickerController()
     @IBOutlet weak var myImageView: UIImageView!
@@ -130,19 +131,54 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     
     
    
-    
+    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  //scattare uan foto
+    @IBAction func camerabuttonaction (_ sender: UIButton){
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker =  UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+                ;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated:  true,
+                         completion: nil)
+        }
+
+    }
+    // scegliere foto da libreria
+    @IBAction func photolibraryaction (_ sender: UIButton){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary)
+        {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated:  true, completion: nil)
+        }
+    }
+    
+    
+    
+    
     
     //Salvo i nuovi dati del profilo modificati
     @IBAction func save(_ sender: UIButton){
-        
+        let imageData = UIImageJPEGRepresentation(pickedImaged.image!, 0.6)
+        let compressJPEGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressJPEGImage!, nil, nil, nil)
         
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo :[NSObject: AnyObject]!) {
+        pickedImaged.image = image
+        self.dismiss(animated: true, completion: nil);
+    }
     
     // MARK: - Navigation
     
