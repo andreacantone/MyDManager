@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96Q-1g-1rs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96Q-1g-1rs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE1-xh-ck2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-1780"/>
+            <point key="canvasLocation" x="918" y="-1781"/>
         </scene>
         <!--History-->
         <scene sceneID="YBa-nz-cqJ">
@@ -328,7 +328,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqp-0a-U4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="-1780"/>
+            <point key="canvasLocation" x="1916" y="-1782"/>
         </scene>
         <!--Item-->
         <scene sceneID="VWt-g2-Beg">
@@ -365,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yJ-Bh-eYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="-985"/>
+            <point key="canvasLocation" x="918" y="-1048"/>
         </scene>
         <!--View Tab Bar Controller-->
         <scene sceneID="eF1-HU-Ydk">
@@ -379,8 +379,8 @@
                         <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wCp-uY-aoW" kind="relationship" relationship="viewControllers" id="udf-j5-dhO"/>
                         <segue destination="pdP-s5-GHx" kind="relationship" relationship="viewControllers" id="9Ek-Tq-xDD"/>
+                        <segue destination="wCp-uY-aoW" kind="relationship" relationship="viewControllers" id="udf-j5-dhO"/>
                         <segue destination="uPX-N4-sgg" kind="relationship" relationship="viewControllers" id="M6D-gP-nGh"/>
                         <segue destination="lTU-Aa-xgH" kind="relationship" relationship="viewControllers" id="pNr-wH-jpE"/>
                     </connections>
