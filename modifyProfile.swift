@@ -17,7 +17,7 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     @IBOutlet var newB : UITextField!
     @IBOutlet var newP: UITextField!
     @IBOutlet var newIm : UIImageView!
-    @IBOutlet var save :  UIButton!
+    @IBOutlet var save :  UIBarButtonItem!
 
     var newName : String = ""
     var newSurname : String = ""
@@ -35,7 +35,6 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         newE.text = newEmail
         newB.text = newBirthdate
         newP.text = newPassword
-        save.layer.cornerRadius = 7
         //immagine rotonda
         newIm.layer.borderWidth = 1
         newIm.layer.masksToBounds = false
