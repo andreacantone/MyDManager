@@ -8,16 +8,26 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
     override func viewDidLoad() {
+        userEmailTextField.clearButtonMode = .whileEditing
+        userPasswordTextField.clearButtonMode = .whileEditing
+        repeatPasswordTextField.clearButtonMode = .whileEditing
         super.viewDidLoad()
-        
+        userEmailTextField.delegate = self
+        userPasswordTextField.delegate = self
+        userPasswordTextField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func didReceiveMemoryWarning() {

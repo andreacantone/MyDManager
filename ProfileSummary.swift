@@ -112,4 +112,23 @@ class ProfileSummary: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool)
+    {
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
+        
+        if(!isUserLoggedIn)
+        {
+            self.performSegue(withIdentifier: "loginView", sender: self);
+        }
+
+    }
+    
+    @IBAction func logoutButtonTapped(_ sender: AnyObject) {
+        
+        UserDefaults.standard.set(false,forKey:"isUserLoggedIn");
+        UserDefaults.standard.synchronize();
+        
+        self.performSegue(withIdentifier: "loginView", sender: self);
+    }
+    
 }
