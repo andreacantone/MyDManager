@@ -30,19 +30,22 @@ class ProfileSummary: UIViewController {
     
     override func viewDidLoad() {
         //Label per Nome Profilo
-        LoggedName.layer.borderWidth = 1.0
+        LoggedName.layer.borderWidth = 0.5
         LoggedName.layer.cornerRadius = 7
-        LoggedName.layer.borderColor = UIColor.gray.cgColor
+        LoggedName.layer.borderColor = UIColor.lightGray.cgColor
+        LoggedName.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
         LoggedName.text = Name
         //Label per Cognome Profilo
-        LoggedSurname.layer.borderWidth = 1.0
+        LoggedSurname.layer.borderWidth = 0.5
         LoggedSurname.layer.cornerRadius = 7
-        LoggedSurname.layer.borderColor = UIColor.gray.cgColor
+        LoggedSurname.layer.borderColor = UIColor.lightGray.cgColor
+        LoggedSurname.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
         LoggedSurname.text = Surname
         //Label per ICHO Profilo
-        LoggedICHO.layer.borderWidth = 1.0
+        LoggedICHO.layer.borderWidth = 0.5
         LoggedICHO.layer.cornerRadius = 7
-        LoggedICHO.layer.borderColor = UIColor.gray.cgColor
+        LoggedICHO.layer.borderColor = UIColor.lightGray.cgColor
+        LoggedICHO.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
         LoggedICHO.text = ICHO
         //immagine rotonda
         OminoImage.layer.borderWidth = 1
@@ -54,9 +57,10 @@ class ProfileSummary: UIViewController {
         OminoImage.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
 
         //Label per valori glicemici
-        LoggedAverage.layer.borderWidth = 1.0
+        LoggedAverage.layer.borderWidth = 0.5
         LoggedAverage.layer.cornerRadius = 7
-        LoggedAverage.layer.borderColor = UIColor.gray.cgColor
+        LoggedAverage.layer.borderColor = UIColor.lightGray.cgColor
+        LoggedAverage.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
         LoggedAverage.text = Average
         
         //gesture per swap DAAGGIUNGERE
