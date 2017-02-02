@@ -145,6 +145,7 @@
 		AC9E934C1E427D9600928B4D /* My Charts */ = {
 			isa = PBXGroup;
 			children = (
+				AC9E93761E42892100928B4D /* ChartViewController.swift */,
 			);
 			name = "My Charts";
 			path = ..;
