@@ -9,7 +9,9 @@
 import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate{
+    
 
+    
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
@@ -62,11 +64,28 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             
         }
         
-        
         // Store data
+        
+    /*
         UserDefaults.standard.setValue(userEmail,forKey: "userEmail")
         UserDefaults.standard.setValue(userPassword,forKey: "userPassword")
-        UserDefaults.standard.synchronize()
+*/
+        
+        guard let profilidata = UserDefaults.standard.object(forKey: "PROFILI") as? NSData else {
+            print("'Not found in UserDefaults")
+            return
+        }
+        
+        guard var profilesArray = NSKeyedUnarchiver.unarchiveObject(with: profilidata as Data) as? [ProfiloUtente] else {
+            print("Could not unarchive from profili")
+            return
+        }
+        profilesArray.append(ProfiloUtente(email: userEmail!, password: userPassword!))
+        
+            let profiliData = NSKeyedArchiver.archivedData(withRootObject: profilesArray)
+            UserDefaults.standard.set(profiliData, forKey: "PROFILI")
+            UserDefaults.standard.synchronize()
+
         
         let myAlert = UIAlertController(title:"ALERT", message: "Registration complete!", preferredStyle:UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "CHIUDI", style: UIAlertActionStyle.default, handler:
