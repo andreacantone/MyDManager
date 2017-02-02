@@ -17,7 +17,6 @@
 		AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933F1E427A4C00928B4D /* Assets.xcassets */; };
 		AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */; };
 		AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937B1E43369300928B4D /* ChartsViewController.swift */; };
-		ACF8D0AF1E43DE43005D6858 /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF8D0AE1E43DE43005D6858 /* Feature.xib */; };
 		ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */; };
 		ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */; };
 		ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */; };
@@ -26,6 +25,8 @@
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
 		DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */; };
 		DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C301E43C3B500F0861A /* cibi.swift */; };
+		DE0D0C371E43E3C600F0861A /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0D0C361E43E3C600F0861A /* Feature.xib */; };
+		DE0D0C381E43E89000F0861A /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C21E439CDC0029C895 /* FeatureView.swift */; };
 		F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C01E439C950029C895 /* ViewController.swift */; };
 		F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C41E439D130029C895 /* CircularTransition.swift */; };
 		F7F2A0C71E439D910029C895 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C61E439D910029C895 /* secondViewController.swift */; };
@@ -88,7 +89,6 @@
 		AC9E93421E427A4C00928B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9E937B1E43369300928B4D /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
-		ACF8D0AE1E43DE43005D6858 /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../../Downloads/Feature.xib; sourceTree = "<group>"; };
 		ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfiloUtente.swift; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleSourceTableViewCell.swift; sourceTree = "<group>"; };
 		DE0D0C301E43C3B500F0861A /* cibi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cibi.swift; sourceTree = "<group>"; };
+		DE0D0C361E43E3C600F0861A /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../Downloads/Feature.xib; sourceTree = "<group>"; };
 		F7F2A0C01E439C950029C895 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7F2A0C21E439CDC0029C895 /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureView.swift; path = ../FeatureView.swift; sourceTree = "<group>"; };
 		F7F2A0C41E439D130029C895 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularTransition.swift; path = ../CircularTransition.swift; sourceTree = "<group>"; };
@@ -217,7 +218,7 @@
 				F7F2A0C01E439C950029C895 /* ViewController.swift */,
 				F7F2A0C21E439CDC0029C895 /* FeatureView.swift */,
 				DE0D0C301E43C3B500F0861A /* cibi.swift */,
-				ACF8D0AE1E43DE43005D6858 /* Feature.xib */,
+				DE0D0C361E43E3C600F0861A /* Feature.xib */,
 			);
 			name = "Food Manu";
 			sourceTree = "<group>";
@@ -314,7 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF8D0AF1E43DE43005D6858 /* Feature.xib in Resources */,
+				DE0D0C371E43E3C600F0861A /* Feature.xib in Resources */,
 				AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */,
 				AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */,
 				AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */,
@@ -328,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D0C381E43E89000F0861A /* FeatureView.swift in Sources */,
 				F7F2A0C71E439D910029C895 /* secondViewController.swift in Sources */,
 				DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */,
 				AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */,
