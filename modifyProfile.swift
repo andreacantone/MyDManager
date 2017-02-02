@@ -17,6 +17,7 @@ class modifyProfile: UIViewController {
     @IBOutlet var newP: UITextField!
     @IBOutlet var newIm : UIImageView!
     @IBOutlet var save :  UIButton!
+
     
     var newName : String = ""
     var newSurname : String = ""
@@ -34,10 +35,17 @@ class modifyProfile: UIViewController {
         newE.text = newEmail
         newB.text = newBirthdate
         newP.text = newPassword
-        newIm.image = UIImage (named: newImage)
         save.layer.cornerRadius = 7
-        save.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
-        save.layer.borderWidth = 1.0
+        //immagine rotonda
+        newIm.layer.borderWidth = 1
+        newIm.layer.masksToBounds = false
+        newIm.layer.cornerRadius = newIm.frame.size.height/2
+        newIm.layer.cornerRadius = newIm.frame.size.width/2
+        newIm.clipsToBounds = true
+        newIm.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
+        newIm.image = UIImage(named: "ominopc")
+        newIm.image = UIImage (named: newImage)
+    
         
         
         // Do any additional setup after loading the view.

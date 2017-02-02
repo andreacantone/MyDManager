@@ -14,6 +14,7 @@ class ProfileSummary: UIViewController {
     @IBOutlet var LoggedSurname: UILabel!
     @IBOutlet var LoggedICHO: UILabel!
     @IBOutlet var OminoImage: UIImageView!
+    @IBOutlet var LoggedAverage: UILabel!
     
     //DA VEDERE se fisso o se deve funzionare il log in
     var Name = "Anna"
@@ -22,6 +23,8 @@ class ProfileSummary: UIViewController {
     var Email = "anna.belardo94@gmail.com"
     var Birthdate = "02/09/1994"
     var Password = "raffaelegay"
+    //ENZO FAI COSE A QUESTA VARIABILE
+    var Average = "14"
     
     
     
@@ -48,6 +51,13 @@ class ProfileSummary: UIViewController {
         OminoImage.layer.cornerRadius = OminoImage.frame.size.width/2
         OminoImage.clipsToBounds = true
         OminoImage.image = UIImage(named: "ominopc")
+        OminoImage.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
+
+        //Label per valori glicemici
+        LoggedAverage.layer.borderWidth = 1.0
+        LoggedAverage.layer.cornerRadius = 7
+        LoggedAverage.layer.borderColor = UIColor.gray.cgColor
+        LoggedAverage.text = Average
         
         //gesture per swap DAAGGIUNGERE
         super.viewDidLoad()
@@ -55,6 +65,28 @@ class ProfileSummary: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -63,7 +95,7 @@ class ProfileSummary: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ModifyProfile"{
+        if segue.identifier == "modifyProfile"{
             let destinationController = segue.destination as! modifyProfile
             destinationController.newName = Name
             destinationController.newSurname = Surname
