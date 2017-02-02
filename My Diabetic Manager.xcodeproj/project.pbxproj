@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */; };
 		06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06630A4C1E43409C00D5A334 /* modifyProfile.swift */; };
+		AC3BDA281E436EDC00CCD31A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3BDA1C1E436EA400CCD31A /* Charts.framework */; };
+		AC3BDA291E436EDC00CCD31A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC3BDA1C1E436EA400CCD31A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93381E427A4C00928B4D /* AppDelegate.swift */; };
 		AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */; };
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
@@ -21,35 +23,33 @@
 		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
 		DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */; };
-		DE0D0C251E428D6F00F0861A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0D0C201E428D6400F0861A /* Charts.framework */; };
-		DE0D0C261E428D6F00F0861A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE0D0C201E428D6400F0861A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE0D0C1F1E428D6400F0861A /* PBXContainerItemProxy */ = {
+		AC3BDA1B1E436EA400CCD31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
+			containerPortal = AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		DE0D0C211E428D6400F0861A /* PBXContainerItemProxy */ = {
+		AC3BDA1D1E436EA400CCD31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
+			containerPortal = AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		DE0D0C231E428D6400F0861A /* PBXContainerItemProxy */ = {
+		AC3BDA1F1E436EA400CCD31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
+			containerPortal = AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		DE0D0C271E428D6F00F0861A /* PBXContainerItemProxy */ = {
+		AC3BDA2A1E436EDC00CCD31A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
+			containerPortal = AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
@@ -57,13 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AC9E93601E42801500928B4D /* Embed Frameworks */ = {
+		AC3BDA2C1E436EDC00CCD31A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE0D0C261E428D6F00F0861A /* Charts.framework in Embed Frameworks */,
+				AC3BDA291E436EDC00CCD31A /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +73,7 @@
 /* Begin PBXFileReference section */
 		064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		06630A4C1E43409C00D5A334 /* modifyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyProfile.swift; sourceTree = "<group>"; };
+		AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		AC9E93351E427A4C00928B4D /* My Diabetic Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diabetic Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E93381E427A4C00928B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabBarController.swift; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleSourceTableViewCell.swift; sourceTree = "<group>"; };
-		DE0D0C181E428D6400F0861A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,19 +95,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0D0C251E428D6F00F0861A /* Charts.framework in Frameworks */,
+				AC3BDA281E436EDC00CCD31A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3BDA161E436EA400CCD31A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3BDA1C1E436EA400CCD31A /* Charts.framework */,
+				AC3BDA1E1E436EA400CCD31A /* ChartsRealm.framework */,
+				AC3BDA201E436EA400CCD31A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AC9E932C1E427A4C00928B4D = {
 			isa = PBXGroup;
 			children = (
 				AC9E93371E427A4C00928B4D /* My Diabetic Manager */,
 				AC9E93361E427A4C00928B4D /* Products */,
-				DE0D0C181E428D6400F0861A /* Charts.xcodeproj */,
+				AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,16 +194,6 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		DE0D0C191E428D6400F0861A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DE0D0C201E428D6400F0861A /* Charts.framework */,
-				DE0D0C221E428D6400F0861A /* ChartsRealm.framework */,
-				DE0D0C241E428D6400F0861A /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,12 +204,12 @@
 				AC9E93311E427A4C00928B4D /* Sources */,
 				AC9E93321E427A4C00928B4D /* Frameworks */,
 				AC9E93331E427A4C00928B4D /* Resources */,
-				AC9E93601E42801500928B4D /* Embed Frameworks */,
+				AC3BDA2C1E436EDC00CCD31A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE0D0C281E428D6F00F0861A /* PBXTargetDependency */,
+				AC3BDA2B1E436EDC00CCD31A /* PBXTargetDependency */,
 			);
 			name = "My Diabetic Manager";
 			productName = "My Diabetic Manager";
@@ -246,8 +246,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DE0D0C191E428D6400F0861A /* Products */;
-					ProjectRef = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
+					ProductGroup = AC3BDA161E436EA400CCD31A /* Products */;
+					ProjectRef = AC3BDA151E436EA400CCD31A /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -258,25 +258,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DE0D0C201E428D6400F0861A /* Charts.framework */ = {
+		AC3BDA1C1E436EA400CCD31A /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = DE0D0C1F1E428D6400F0861A /* PBXContainerItemProxy */;
+			remoteRef = AC3BDA1B1E436EA400CCD31A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DE0D0C221E428D6400F0861A /* ChartsRealm.framework */ = {
+		AC3BDA1E1E436EA400CCD31A /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = DE0D0C211E428D6400F0861A /* PBXContainerItemProxy */;
+			remoteRef = AC3BDA1D1E436EA400CCD31A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DE0D0C241E428D6400F0861A /* ChartsTests.xctest */ = {
+		AC3BDA201E436EA400CCD31A /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = DE0D0C231E428D6400F0861A /* PBXContainerItemProxy */;
+			remoteRef = AC3BDA1F1E436EA400CCD31A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -316,10 +316,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE0D0C281E428D6F00F0861A /* PBXTargetDependency */ = {
+		AC3BDA2B1E436EDC00CCD31A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = DE0D0C271E428D6F00F0861A /* PBXContainerItemProxy */;
+			targetProxy = AC3BDA2A1E436EDC00CCD31A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

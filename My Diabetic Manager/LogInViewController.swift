@@ -8,17 +8,27 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate{
         
         @IBOutlet weak var userEmailTextField: UITextField!
         @IBOutlet weak var userPasswordTextField: UITextField!
         
         override func viewDidLoad() {
+            userEmailTextField.clearButtonMode = .whileEditing
+            userPasswordTextField.clearButtonMode = .whileEditing
             super.viewDidLoad()
+            userEmailTextField.delegate = self
+            userPasswordTextField.delegate = self
+
             
             // Do any additional setup after loading the view.
         }
-        
+    
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
+    
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
