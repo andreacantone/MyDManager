@@ -75,63 +75,6 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         )
     }
     
-    /*
-    
-    let picker = UIImagePickerController()
-    @IBOutlet weak var myImageView: UIImageView!
-   /* @IBAction func photoFromLibrary(_ sender: UIButton) {
-        picker.allowsEditing = false
-        picker.sourceType = .photoLibrary
-        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-        picker.modalPresentationStyle = .popover
-        present(picker, animated: true, completion: nil)
-        picker.popoverPresentationController?.barButtonItem = sender
-    }*/
-    
-    @IBAction func shootPhoto(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            picker.allowsEditing = false
-            picker.sourceType = UIImagePickerControllerSourceType.camera
-            picker.cameraCaptureMode = .photo
-            picker.modalPresentationStyle = .fullScreen
-            present(picker,animated: true,completion: nil)
-        } else {
-            noCamera()
-        }
-    }
-    func noCamera(){
-        let alertVC = UIAlertController(
-            title: "No Camera",
-            message: "Sorry, this device has no camera",
-            preferredStyle: .alert)
-        let okAction = UIAlertAction(
-            title: "OK",
-            style:.default,
-            handler: nil)
-        alertVC.addAction(okAction)
-        present(
-            alertVC,
-            animated: true,
-            completion: nil)
-    }
-    
-    //MARK: - Delegates
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : AnyObject])
-    {
-        var  chosenImage = UIImage()
-        chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
-        myImageView.contentMode = .scaleAspectFit //3
-        myImageView.image = chosenImage //4
-        dismiss(animated:true, completion: nil) //5
-    }
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-   
-    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -164,15 +107,13 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     }
     
     
-    
-    
-    
     //Salvo i nuovi dati del profilo modificati
     @IBAction func save(_ sender: UIBarButtonItem){
         //roba per foto
         let imageData = UIImageJPEGRepresentation(pickedImaged.image!, 0.6)
         let compressJPEGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressJPEGImage!, nil, nil, nil)
+        saveNotice()
         
     }
     
@@ -181,6 +122,12 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         self.dismiss(animated: true, completion: nil);
     }
     
+    func saveNotice () {
+        let alertController = UIAlertController(title: "Successfully Update!", message: "Your data was successfully update.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        present (alertController, animated: true, completion: nil)
+    }
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
