@@ -8,6 +8,21 @@
 
 import UIKit
 
+struct User_profile{
+    var username: String
+    var password: String
+    var email: String
+    var name: String
+    var surname: String
+    var birthdata: String
+    var ratio_cho: Float
+    
+
+}
+
+var User_profiles: [User_profile] = []
+
+
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
