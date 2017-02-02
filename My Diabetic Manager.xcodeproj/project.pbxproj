@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93381E427A4C00928B4D /* AppDelegate.swift */; };
-		AC9E933B1E427A4C00928B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewController.swift */; };
+		AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */; };
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
 		AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933F1E427A4C00928B4D /* Assets.xcassets */; };
 		AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */; };
 		AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937B1E43369300928B4D /* ChartsViewController.swift */; };
+		AC9E937F1E4344CA00928B4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937E1E4344CA00928B4D /* LogInViewController.swift */; };
+		AC9E93811E4344E800928B4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93801E4344E800928B4D /* RegisterViewController.swift */; };
 		DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C101E42877800F0861A /* MenuTableViewController.swift */; };
 		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
@@ -69,12 +71,14 @@
 /* Begin PBXFileReference section */
 		AC9E93351E427A4C00928B4D /* My Diabetic Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diabetic Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E93381E427A4C00928B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC9E933A1E427A4C00928B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabBarController.swift; sourceTree = "<group>"; };
 		AC9E933D1E427A4C00928B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC9E933F1E427A4C00928B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9E93421E427A4C00928B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9E937B1E43369300928B4D /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		AC9E937E1E4344CA00928B4D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		AC9E93801E4344E800928B4D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DE0D0C101E42877800F0861A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,12 +118,13 @@
 		AC9E93371E427A4C00928B4D /* My Diabetic Manager */ = {
 			isa = PBXGroup;
 			children = (
+				AC9E937D1E43436A00928B4D /* Login */,
 				AC9E934D1E427DB000928B4D /* Food */,
 				AC9E934C1E427D9600928B4D /* My Charts */,
 				AC9E934B1E427D8900928B4D /* My Calendar */,
 				AC9E934A1E427D6D00928B4D /* My Profile */,
 				AC9E93381E427A4C00928B4D /* AppDelegate.swift */,
-				AC9E933A1E427A4C00928B4D /* ViewController.swift */,
+				AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */,
 				AC9E933C1E427A4C00928B4D /* Main.storyboard */,
 				AC9E933F1E427A4C00928B4D /* Assets.xcassets */,
 				AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */,
@@ -162,6 +167,15 @@
 				DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */,
 			);
 			name = Food;
+			sourceTree = "<group>";
+		};
+		AC9E937D1E43436A00928B4D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC9E937E1E4344CA00928B4D /* LogInViewController.swift */,
+				AC9E93801E4344E800928B4D /* RegisterViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		DE0D0C191E428D6400F0861A /* Products */ = {
@@ -279,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9E93811E4344E800928B4D /* RegisterViewController.swift in Sources */,
 				DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */,
 				AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */,
-				AC9E933B1E427A4C00928B4D /* ViewController.swift in Sources */,
+				AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */,
 				AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */,
+				AC9E937F1E4344CA00928B4D /* LogInViewController.swift in Sources */,
 				DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */,
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
 				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
