@@ -96,7 +96,6 @@
 		DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleSourceTableViewCell.swift; sourceTree = "<group>"; };
 		DE0D0C301E43C3B500F0861A /* cibi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cibi.swift; sourceTree = "<group>"; };
 		DE0D0C321E43C49B00F0861A /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../Downloads/Feature.xib; sourceTree = "<group>"; };
-		F7530D8F1E43AA62006541F2 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts.xcodeproj; sourceTree = "<group>"; };
 		F7F2A0C01E439C950029C895 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7F2A0C21E439CDC0029C895 /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureView.swift; path = ../FeatureView.swift; sourceTree = "<group>"; };
 		F7F2A0C41E439D130029C895 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularTransition.swift; path = ../CircularTransition.swift; sourceTree = "<group>"; };
@@ -206,16 +205,6 @@
 				AC9E93801E4344E800928B4D /* RegisterViewController.swift */,
 			);
 			name = Login;
-			sourceTree = "<group>";
-		};
-		F7530D901E43AA62006541F2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F7530D961E43AA62006541F2 /* Charts.framework */,
-				F7530D981E43AA62006541F2 /* ChartsRealm.framework */,
-				F7530D9A1E43AA62006541F2 /* ChartsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F7F2A0BB1E439BD70029C895 /* Food Manu */ = {
