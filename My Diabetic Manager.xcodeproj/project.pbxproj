@@ -17,16 +17,17 @@
 		AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933F1E427A4C00928B4D /* Assets.xcassets */; };
 		AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */; };
 		AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937B1E43369300928B4D /* ChartsViewController.swift */; };
-		AC9E937F1E4344CA00928B4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937E1E4344CA00928B4D /* LogInViewController.swift */; };
-		AC9E93811E4344E800928B4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93801E4344E800928B4D /* RegisterViewController.swift */; };
+		ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */; };
+		ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */; };
+		ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */; };
 		DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C101E42877800F0861A /* MenuTableViewController.swift */; };
 		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
 		DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */; };
 		DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C301E43C3B500F0861A /* cibi.swift */; };
-		DE0D0C331E43C49B00F0861A /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0D0C321E43C49B00F0861A /* Feature.xib */; };
+		DE0D0C371E43E3C600F0861A /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0D0C361E43E3C600F0861A /* Feature.xib */; };
+		DE0D0C381E43E89000F0861A /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C21E439CDC0029C895 /* FeatureView.swift */; };
 		F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C01E439C950029C895 /* ViewController.swift */; };
-		F7F2A0C31E439CDC0029C895 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C21E439CDC0029C895 /* FeatureView.swift */; };
 		F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C41E439D130029C895 /* CircularTransition.swift */; };
 		F7F2A0C71E439D910029C895 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C61E439D910029C895 /* secondViewController.swift */; };
 /* End PBXBuildFile section */
@@ -88,8 +89,9 @@
 		AC9E93421E427A4C00928B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9E937B1E43369300928B4D /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
-		AC9E937E1E4344CA00928B4D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		AC9E93801E4344E800928B4D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfiloUtente.swift; sourceTree = "<group>"; };
 		DE0D0C101E42877800F0861A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
@@ -201,8 +203,9 @@
 		AC9E937D1E43436A00928B4D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				AC9E937E1E4344CA00928B4D /* LogInViewController.swift */,
-				AC9E93801E4344E800928B4D /* RegisterViewController.swift */,
+				ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */,
+				ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */,
+				ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -215,7 +218,7 @@
 				F7F2A0C01E439C950029C895 /* ViewController.swift */,
 				F7F2A0C21E439CDC0029C895 /* FeatureView.swift */,
 				DE0D0C301E43C3B500F0861A /* cibi.swift */,
-				DE0D0C321E43C49B00F0861A /* Feature.xib */,
+				DE0D0C361E43E3C600F0861A /* Feature.xib */,
 			);
 			name = "Food Manu";
 			sourceTree = "<group>";
@@ -254,7 +257,7 @@
 				TargetAttributes = {
 					AC9E93341E427A4C00928B4D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 52S92BT338;
+						DevelopmentTeam = 93JF9LS6ZY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -312,7 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0D0C331E43C49B00F0861A /* Feature.xib in Resources */,
+				DE0D0C371E43E3C600F0861A /* Feature.xib in Resources */,
 				AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */,
 				AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */,
 				AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */,
@@ -326,21 +329,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D0C381E43E89000F0861A /* FeatureView.swift in Sources */,
 				F7F2A0C71E439D910029C895 /* secondViewController.swift in Sources */,
-				AC9E93811E4344E800928B4D /* RegisterViewController.swift in Sources */,
 				DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */,
 				AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */,
 				AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */,
 				AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */,
-				AC9E937F1E4344CA00928B4D /* LogInViewController.swift in Sources */,
 				DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */,
-				F7F2A0C31E439CDC0029C895 /* FeatureView.swift in Sources */,
+				ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */,
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
 				F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */,
 				F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */,
 				DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */,
+				ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */,
 				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
 				06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */,
+				ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */,
 				064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +475,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 52S92BT338;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = "My Diabetic Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOsFoundation.My-Diabetic-Manager";
@@ -485,7 +489,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 52S92BT338;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = "My Diabetic Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOsFoundation.My-Diabetic-Manager";
