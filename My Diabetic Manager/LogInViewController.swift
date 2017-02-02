@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct MyVariable {
+    static var usr_logged = ProfiloUtente(email: "", password: "")
+}
+
+
 class LogInViewController: UIViewController, UITextFieldDelegate{
         
         @IBOutlet weak var userEmailTextField: UITextField!
@@ -36,13 +41,14 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
         
     
         @IBAction func loginButtonTapped(_ sender: AnyObject) {
-            
+
             let userEmail = userEmailTextField.text;
             let userPassword = userPasswordTextField.text;
             
+            /*
             let userEmailStored = UserDefaults.standard.string(forKey: "userEmail");
-            
             let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword");
+
             
             if(userEmailStored == userEmail)
             {
@@ -56,7 +62,28 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
 
                 }
             }
+*/
             
+
+                guard let profiliData = UserDefaults.standard.object(forKey: "PROFILI") as? NSData else {
+                    print("'Not found in UserDefaults")
+                    return
+                }
+                
+                guard let profilesArray = NSKeyedUnarchiver.unarchiveObject(with: profiliData as Data) as? [ProfiloUtente] else {
+                    print("Could not unarchive from profili")
+                    return
+                }
+            
+            for user in profilesArray{
+                if user.email == userEmail && user.password == userPassword{
+                    UserDefaults.standard.set(true,forKey:"isUserLoggedIn");
+                    UserDefaults.standard.synchronize();
+                    self.dismiss(animated: true, completion:nil);
+                    MyVariable.usr_logged = user
+                    return
+                }
+            }
             
         }
      
