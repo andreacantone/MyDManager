@@ -5,14 +5,13 @@
 //  Created by Vincenzo De Rosa on 01/02/17.
 //  Copyright © 2017 Vincenzo De Rosa. All rights reserved.
 //
-
 import UIKit
 import Charts
 
 var disclaimerHasBeenDisplayed = false
 
 class ChartViewController: UIViewController, UITextFieldDelegate{
-
+    
     @IBOutlet weak var Salva: UIButton!
     @IBOutlet weak var valore: UITextField!
     @IBOutlet weak var todayLabel: UILabel!
@@ -53,7 +52,7 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
-
+        
     }
     
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
@@ -111,7 +110,7 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
         default:
             break
         }
-
+        
     }
     
     struct Giorno{
@@ -218,7 +217,7 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
         textField.resignFirstResponder()
         return true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -247,20 +246,19 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             
             disclaimerHasBeenDisplayed = true
             
-            let alertController = UIAlertController(title: "Welcome!", message: "Qui puoi annotare i tuoi valori glicemici!", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Welcome!", message: "Here You can check and annotate your glycemic values!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Let's start!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
     }
-
-
+    
+    
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-
+    
 }
 
 extension ChartViewController: IAxisValueFormatter {
