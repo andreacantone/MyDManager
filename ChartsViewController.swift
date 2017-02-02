@@ -210,6 +210,15 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
         axisFormatDelegate = self
         valore.delegate = self
         todayLabel.text = returnDate()
+        //cerchio bottone
+        Salva.layer.borderWidth = 0.5
+        Salva.layer.cornerRadius = 7
+        Salva.layer.borderColor = UIColor.lightGray.cgColor
+        textLabel.layer.borderWidth = 0.5
+        textLabel.layer.cornerRadius = 7
+        textLabel.layer.borderColor = UIColor.lightGray.cgColor
+        textLabel.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
+        
         // Do any additional setup after loading the view.
     }
     
@@ -267,3 +276,27 @@ extension ChartViewController: IAxisValueFormatter {
         return period[Int(value)]
     }
 }
+
+// converte codice colori
+func hexStringToUIColor (hex:String) -> UIColor {
+    var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+    
+    if (cString.hasPrefix("#")) {
+        cString.remove(at: cString.startIndex)
+    }
+    
+    if ((cString.characters.count) != 6) {
+        return UIColor.gray
+    }
+    
+    var rgbValue:UInt32 = 0
+    Scanner(string: cString).scanHexInt32(&rgbValue)
+    
+    return UIColor(
+        red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+        green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+        blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+        alpha: CGFloat(1.0)
+    )
+}
+

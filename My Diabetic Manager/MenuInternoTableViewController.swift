@@ -63,9 +63,9 @@ class MenuInternoTableViewController: UITableViewController {
         ]
     
     var sideCourses = [
-        sideCourse(nome: "Chickpeas", immagine: ""),
-        sideCourse(nome: "Beans", immagine: ""),
-        sideCourse(nome: "Peas", immagine: ""),
+        sideCourse(nome: "Chickpeas", immagine: "ceci"),
+        sideCourse(nome: "Beans", immagine: "beans"),
+        sideCourse(nome: "Peas", immagine: "peas"),
         ]
     
     var sandAndPizzas = [
@@ -81,9 +81,9 @@ class MenuInternoTableViewController: UITableViewController {
         ]
     
     var desserts = [
-        dessert(nome: "Sicilian cassata", immagine: ""),
-        dessert(nome: "Napolitan pastiera", immagine: ""),
-        dessert(nome: "Chocolate croissant", immagine: ""),
+        dessert(nome: "Sicilian cassata", immagine: "cassata"),
+        dessert(nome: "Napolitan pastiera", immagine: "pastiera"),
+        dessert(nome: "Chocolate croissant", immagine: "crossaint"),
         ]
     
     let searchController = UISearchController(searchResultsController: nil)
