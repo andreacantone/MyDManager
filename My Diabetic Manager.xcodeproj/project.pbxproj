@@ -11,7 +11,7 @@
 		06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06630A4C1E43409C00D5A334 /* modifyProfile.swift */; };
 		AC3BDA2E1E438BF300CCD31A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BDA2D1E438BF300CCD31A /* TableViewController.swift */; };
 		AC3BDA301E439CAF00CCD31A /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BDA2F1E439CAF00CCD31A /* ProfiloUtente.swift */; };
-		AC3BDA351E43D6DC00CCD31A /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3BDA341E43D6DC00CCD31A /* Feature.xib */; };
+		AC8CE5021E43DAA1009D456B /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8CE5011E43DAA1009D456B /* Feature.xib */; };
 		AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93381E427A4C00928B4D /* AppDelegate.swift */; };
 		AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */; };
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
@@ -72,7 +72,7 @@
 		06630A4C1E43409C00D5A334 /* modifyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyProfile.swift; sourceTree = "<group>"; };
 		AC3BDA2D1E438BF300CCD31A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AC3BDA2F1E439CAF00CCD31A /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfiloUtente.swift; sourceTree = "<group>"; };
-		AC3BDA341E43D6DC00CCD31A /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../../Downloads/Feature.xib; sourceTree = "<group>"; };
+		AC8CE5011E43DAA1009D456B /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../../Downloads/Feature.xib; sourceTree = "<group>"; };
 		AC9E93351E427A4C00928B4D /* My Diabetic Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diabetic Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E93381E427A4C00928B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabBarController.swift; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 				F7F2A0C01E439C950029C895 /* ViewController.swift */,
 				F7F2A0C21E439CDC0029C895 /* FeatureView.swift */,
 				DE0D0C301E43C3B500F0861A /* cibi.swift */,
-				AC3BDA341E43D6DC00CCD31A /* Feature.xib */,
+				AC8CE5011E43DAA1009D456B /* Feature.xib */,
 			);
 			name = "Food Manu";
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3BDA351E43D6DC00CCD31A /* Feature.xib in Resources */,
+				AC8CE5021E43DAA1009D456B /* Feature.xib in Resources */,
 				AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */,
 				AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */,
 				AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */,

@@ -123,7 +123,6 @@ class ViewController: UIViewController, UIScrollViewDelegate,UIViewControllerTra
     
     
     func loadFeatures() {
-        
         for (index, feature) in featureArray.enumerated() {
             if let featureView = Bundle.main.loadNibNamed("Feature", owner: self, options: nil)?.first as? FeatureView {
                 featureView.featureImageView.image = UIImage(named: feature["image"]!)
