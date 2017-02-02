@@ -10,7 +10,6 @@ import UIKit
 
 class ProfileSummary: UIViewController {
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var LoggedName: UILabel!
     @IBOutlet var LoggedSurname: UILabel!
     @IBOutlet var LoggedICHO: UILabel!
@@ -50,13 +49,9 @@ class ProfileSummary: UIViewController {
         OminoImage.clipsToBounds = true
         OminoImage.image = UIImage(named: "ominopc")
         
-        //gesture per swap
+        //gesture per swap DAAGGIUNGERE
         super.viewDidLoad()
-        if revealViewController() != nil {
-            menuButton.target=revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+      
         // Do any additional setup after loading the view.
     }
     
@@ -69,7 +64,7 @@ class ProfileSummary: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModifyProfile"{
-            let destinationController = segue.destination as! ModifyProfile
+            let destinationController = segue.destination as! modifyProfile
             destinationController.newName = Name
             destinationController.newSurname = Surname
             destinationController.newICHO = ICHO
