@@ -17,7 +17,8 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     @IBOutlet var newB : UITextField!
     @IBOutlet var newP: UITextField!
     @IBOutlet var newIm : UIImageView!
-    @IBOutlet var save :  UIButton!
+    @IBOutlet var save :  UIBarButtonItem!
+    @IBOutlet weak var pickedImaged: UIImageView!
 
     var newName : String = ""
     var newSurname : String = ""
@@ -35,7 +36,6 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         newE.text = newEmail
         newB.text = newBirthdate
         newP.text = newPassword
-        save.layer.cornerRadius = 7
         //immagine rotonda
         newIm.layer.borderWidth = 1
         newIm.layer.masksToBounds = false
@@ -45,10 +45,10 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         newIm.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
         newIm.image = UIImage(named: "ominopc")
         newIm.image = UIImage (named: newImage)
-        //
+        /*
         super.viewDidLoad()
         picker.delegate = self
-        
+        */
         
         // Do any additional setup after loading the view.
     }
@@ -76,75 +76,58 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
     }
     
     
-    
-    let picker = UIImagePickerController()
-    @IBOutlet weak var myImageView: UIImageView!
-   /* @IBAction func photoFromLibrary(_ sender: UIButton) {
-        picker.allowsEditing = false
-        picker.sourceType = .photoLibrary
-        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
-        picker.modalPresentationStyle = .popover
-        present(picker, animated: true, completion: nil)
-        picker.popoverPresentationController?.barButtonItem = sender
-    }*/
-    
-    @IBAction func shootPhoto(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            picker.allowsEditing = false
-            picker.sourceType = UIImagePickerControllerSourceType.camera
-            picker.cameraCaptureMode = .photo
-            picker.modalPresentationStyle = .fullScreen
-            present(picker,animated: true,completion: nil)
-        } else {
-            noCamera()
-        }
-    }
-    func noCamera(){
-        let alertVC = UIAlertController(
-            title: "No Camera",
-            message: "Sorry, this device has no camera",
-            preferredStyle: .alert)
-        let okAction = UIAlertAction(
-            title: "OK",
-            style:.default,
-            handler: nil)
-        alertVC.addAction(okAction)
-        present(
-            alertVC,
-            animated: true,
-            completion: nil)
-    }
-    
-    //MARK: - Delegates
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [String : AnyObject])
-    {
-        var  chosenImage = UIImage()
-        chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
-        myImageView.contentMode = .scaleAspectFit //3
-        myImageView.image = chosenImage //4
-        dismiss(animated:true, completion: nil) //5
-    }
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-   
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    //Salvo i nuovi dati del profilo modificati
-    @IBAction func save(_ sender: UIButton){
+  //scattare uan foto
+    @IBAction func camerabuttonaction (_ sender: UIButton){
         
-        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker =  UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+                ;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated:  true,
+                         completion: nil)
+        }
+
+    }
+    // scegliere foto da libreria
+    @IBAction func photolibraryaction (_ sender: UIButton){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary)
+        {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated:  true, completion: nil)
+        }
     }
     
     
+    //Salvo i nuovi dati del profilo modificati
+    @IBAction func save(_ sender: UIBarButtonItem){
+        //roba per foto
+        let imageData = UIImageJPEGRepresentation(pickedImaged.image!, 0.6)
+        let compressJPEGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressJPEGImage!, nil, nil, nil)
+        saveNotice()
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo :[NSObject: AnyObject]!) {
+        pickedImaged.image = image
+        self.dismiss(animated: true, completion: nil);
+    }
+    
+    func saveNotice () {
+        let alertController = UIAlertController(title: "Successfully Update!", message: "Your data was successfully update.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        present (alertController, animated: true, completion: nil)
+    }
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

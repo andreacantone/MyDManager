@@ -341,7 +341,42 @@ class MenuInternoTableViewController: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "cibo"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                
+                var appoggio_2 = ""
+                let destinationController = segue.destination as!
+                ViewController
+                if (coursesName == "First courses"){
+                    appoggio_2 = firstCourses[indexPath.row].nome
+                }
+                else if (coursesName == "Second courses"){
+                    appoggio_2 = secondCourses[indexPath.row].nome
+                }
+                else if (coursesName == "Drinks"){
+                    appoggio_2 = drinks[indexPath.row].nome
+                }
+                else if (coursesName == "Side dishes"){
+                    appoggio_2 = sideCourses[indexPath.row].nome
+                }
+                else if (coursesName == "Sandwitches and pizzas"){
+                    appoggio_2 = sandAndPizzas[indexPath.row].nome
+                }
+                else if (coursesName == "Fruits"){
+                    appoggio_2 = fruits[indexPath.row].nome
+                }
+                else if (coursesName == "Desserts"){
+                    appoggio_2 = desserts[indexPath.row].nome
+                }
+                
+                destinationController.tupla.name = appoggio_2
+                
+            }
+        }
+        
+    }
 }
 
 extension MenuInternoTableViewController: UISearchResultsUpdating{
