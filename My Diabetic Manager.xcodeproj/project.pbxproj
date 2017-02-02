@@ -21,8 +21,8 @@
 		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
 		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
 		DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */; };
-		F7F2A0BD1E439C430029C895 /* cibi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0BC1E439C430029C895 /* cibi.swift */; };
-		F7F2A0BF1E439C720029C895 /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F2A0BE1E439C720029C895 /* Feature.xib */; };
+		DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C301E43C3B500F0861A /* cibi.swift */; };
+		DE0D0C331E43C49B00F0861A /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0D0C321E43C49B00F0861A /* Feature.xib */; };
 		F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C01E439C950029C895 /* ViewController.swift */; };
 		F7F2A0C31E439CDC0029C895 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C21E439CDC0029C895 /* FeatureView.swift */; };
 		F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2A0C41E439D130029C895 /* CircularTransition.swift */; };
@@ -83,9 +83,9 @@
 		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
 		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleSourceTableViewCell.swift; sourceTree = "<group>"; };
+		DE0D0C301E43C3B500F0861A /* cibi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cibi.swift; sourceTree = "<group>"; };
+		DE0D0C321E43C49B00F0861A /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = ../../../Downloads/Feature.xib; sourceTree = "<group>"; };
 		F7530D8F1E43AA62006541F2 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts.xcodeproj; sourceTree = "<group>"; };
-		F7F2A0BC1E439C430029C895 /* cibi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cibi.swift; path = "../../MyDManager-master/My Diabetic Manager/cibi.swift"; sourceTree = "<group>"; };
-		F7F2A0BE1E439C720029C895 /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Feature.xib; path = "../../ScrollViewProjectFINAL 2/ScrollViewPage/Feature.xib"; sourceTree = "<group>"; };
 		F7F2A0C01E439C950029C895 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7F2A0C21E439CDC0029C895 /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureView.swift; path = ../FeatureView.swift; sourceTree = "<group>"; };
 		F7F2A0C41E439D130029C895 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularTransition.swift; path = ../CircularTransition.swift; sourceTree = "<group>"; };
@@ -199,12 +199,12 @@
 		F7F2A0BB1E439BD70029C895 /* Food Manu */ = {
 			isa = PBXGroup;
 			children = (
-				F7F2A0BC1E439C430029C895 /* cibi.swift */,
 				F7F2A0C61E439D910029C895 /* secondViewController.swift */,
 				F7F2A0C41E439D130029C895 /* CircularTransition.swift */,
 				F7F2A0C01E439C950029C895 /* ViewController.swift */,
 				F7F2A0C21E439CDC0029C895 /* FeatureView.swift */,
-				F7F2A0BE1E439C720029C895 /* Feature.xib */,
+				DE0D0C301E43C3B500F0861A /* cibi.swift */,
+				DE0D0C321E43C49B00F0861A /* Feature.xib */,
 			);
 			name = "Food Manu";
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7F2A0BF1E439C720029C895 /* Feature.xib in Resources */,
+				DE0D0C331E43C49B00F0861A /* Feature.xib in Resources */,
 				AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */,
 				AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */,
 				AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */,
@@ -326,7 +326,7 @@
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
 				F7F2A0C11E439C950029C895 /* ViewController.swift in Sources */,
 				F7F2A0C51E439D130029C895 /* CircularTransition.swift in Sources */,
-				F7F2A0BD1E439C430029C895 /* cibi.swift in Sources */,
+				DE0D0C311E43C3B500F0861A /* cibi.swift in Sources */,
 				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
 				06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */,
 				064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */,
