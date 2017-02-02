@@ -12,36 +12,39 @@
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
 		AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933F1E427A4C00928B4D /* Assets.xcassets */; };
 		AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E93411E427A4C00928B4D /* LaunchScreen.storyboard */; };
-		AC9E934F1E427FFC00928B4D /* Librerie esterne in Resources */ = {isa = PBXBuildFile; fileRef = AC9E934E1E427FFC00928B4D /* Librerie esterne */; };
-		AC9E935C1E42801500928B4D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9E93571E42800800928B4D /* Charts.framework */; };
-		AC9E935D1E42801500928B4D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9E93571E42800800928B4D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C101E42877800F0861A /* MenuTableViewController.swift */; };
+		DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */; };
+		DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */; };
+		DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */; };
+		DE0D0C251E428D6F00F0861A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0D0C201E428D6400F0861A /* Charts.framework */; };
+		DE0D0C261E428D6F00F0861A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE0D0C201E428D6400F0861A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC9E93561E42800800928B4D /* PBXContainerItemProxy */ = {
+		DE0D0C1F1E428D6400F0861A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC9E93501E42800700928B4D /* Charts.xcodeproj */;
+			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		AC9E93581E42800800928B4D /* PBXContainerItemProxy */ = {
+		DE0D0C211E428D6400F0861A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC9E93501E42800700928B4D /* Charts.xcodeproj */;
+			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		AC9E935A1E42800800928B4D /* PBXContainerItemProxy */ = {
+		DE0D0C231E428D6400F0861A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC9E93501E42800700928B4D /* Charts.xcodeproj */;
+			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		AC9E935E1E42801500928B4D /* PBXContainerItemProxy */ = {
+		DE0D0C271E428D6F00F0861A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AC9E93501E42800700928B4D /* Charts.xcodeproj */;
+			containerPortal = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
@@ -55,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC9E935D1E42801500928B4D /* Charts.framework in Embed Frameworks */,
+				DE0D0C261E428D6F00F0861A /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,8 +73,11 @@
 		AC9E933F1E427A4C00928B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9E93421E427A4C00928B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9E934E1E427FFC00928B4D /* Librerie esterne */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Librerie esterne"; path = "../../Downloads/Librerie esterne"; sourceTree = "<group>"; };
-		AC9E93501E42800700928B4D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		DE0D0C101E42877800F0861A /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInternoTableViewController.swift; sourceTree = "<group>"; };
+		DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
+		DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleSourceTableViewCell.swift; sourceTree = "<group>"; };
+		DE0D0C181E428D6400F0861A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9E935C1E42801500928B4D /* Charts.framework in Frameworks */,
+				DE0D0C251E428D6F00F0861A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +97,7 @@
 			children = (
 				AC9E93371E427A4C00928B4D /* My Diabetic Manager */,
 				AC9E93361E427A4C00928B4D /* Products */,
-				AC9E93501E42800700928B4D /* Charts.xcodeproj */,
-				AC9E934E1E427FFC00928B4D /* Librerie esterne */,
+				DE0D0C181E428D6400F0861A /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,16 +153,20 @@
 		AC9E934D1E427DB000928B4D /* Food */ = {
 			isa = PBXGroup;
 			children = (
+				DE0D0C101E42877800F0861A /* MenuTableViewController.swift */,
+				DE0D0C121E4287ED00F0861A /* MenuInternoTableViewController.swift */,
+				DE0D0C141E42883000F0861A /* SourceTableViewCell.swift */,
+				DE0D0C161E42884E00F0861A /* singleSourceTableViewCell.swift */,
 			);
 			name = Food;
 			sourceTree = "<group>";
 		};
-		AC9E93511E42800700928B4D /* Products */ = {
+		DE0D0C191E428D6400F0861A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC9E93571E42800800928B4D /* Charts.framework */,
-				AC9E93591E42800800928B4D /* ChartsRealm.framework */,
-				AC9E935B1E42800800928B4D /* ChartsTests.xctest */,
+				DE0D0C201E428D6400F0861A /* Charts.framework */,
+				DE0D0C221E428D6400F0861A /* ChartsRealm.framework */,
+				DE0D0C241E428D6400F0861A /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +186,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				AC9E935F1E42801500928B4D /* PBXTargetDependency */,
+				DE0D0C281E428D6F00F0861A /* PBXTargetDependency */,
 			);
 			name = "My Diabetic Manager";
 			productName = "My Diabetic Manager";
@@ -214,8 +223,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AC9E93511E42800700928B4D /* Products */;
-					ProjectRef = AC9E93501E42800700928B4D /* Charts.xcodeproj */;
+					ProductGroup = DE0D0C191E428D6400F0861A /* Products */;
+					ProjectRef = DE0D0C181E428D6400F0861A /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -226,25 +235,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AC9E93571E42800800928B4D /* Charts.framework */ = {
+		DE0D0C201E428D6400F0861A /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = AC9E93561E42800800928B4D /* PBXContainerItemProxy */;
+			remoteRef = DE0D0C1F1E428D6400F0861A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AC9E93591E42800800928B4D /* ChartsRealm.framework */ = {
+		DE0D0C221E428D6400F0861A /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = AC9E93581E42800800928B4D /* PBXContainerItemProxy */;
+			remoteRef = DE0D0C211E428D6400F0861A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AC9E935B1E42800800928B4D /* ChartsTests.xctest */ = {
+		DE0D0C241E428D6400F0861A /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = AC9E935A1E42800800928B4D /* PBXContainerItemProxy */;
+			remoteRef = DE0D0C231E428D6400F0861A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -254,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9E934F1E427FFC00928B4D /* Librerie esterne in Resources */,
 				AC9E93431E427A4C00928B4D /* LaunchScreen.storyboard in Resources */,
 				AC9E93401E427A4C00928B4D /* Assets.xcassets in Resources */,
 				AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */,
@@ -268,18 +276,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D0C171E42884E00F0861A /* singleSourceTableViewCell.swift in Sources */,
 				AC9E933B1E427A4C00928B4D /* ViewController.swift in Sources */,
 				AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */,
+				DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */,
+				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
+				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC9E935F1E42801500928B4D /* PBXTargetDependency */ = {
+		DE0D0C281E428D6F00F0861A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = AC9E935E1E42801500928B4D /* PBXContainerItemProxy */;
+			targetProxy = DE0D0C271E428D6F00F0861A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +453,7 @@
 				AC9E93491E427A4C00928B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
