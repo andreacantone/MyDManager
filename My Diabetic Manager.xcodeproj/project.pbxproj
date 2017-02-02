@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */; };
 		06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06630A4C1E43409C00D5A334 /* modifyProfile.swift */; };
-		06630A511E43410200D5A334 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06630A501E43410200D5A334 /* ProfileSummary.swift */; };
 		AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E93381E427A4C00928B4D /* AppDelegate.swift */; };
 		AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */; };
 		AC9E933E1E427A4C00928B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E933C1E427A4C00928B4D /* Main.storyboard */; };
@@ -71,8 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		06630A4C1E43409C00D5A334 /* modifyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modifyProfile.swift; sourceTree = "<group>"; };
-		06630A501E43410200D5A334 /* ProfileSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		AC9E93351E427A4C00928B4D /* My Diabetic Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diabetic Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E93381E427A4C00928B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9E933A1E427A4C00928B4D /* ViewTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTabBarController.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				06630A4C1E43409C00D5A334 /* modifyProfile.swift */,
-				06630A501E43410200D5A334 /* ProfileSummary.swift */,
+				064D4D6E1E4362BC004F05AF /* ProfileSummary.swift */,
 			);
 			name = "My Profile";
 			path = ..;
@@ -309,6 +309,7 @@
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
 				DE0D0C111E42877800F0861A /* MenuTableViewController.swift in Sources */,
 				06630A4D1E43409C00D5A334 /* modifyProfile.swift in Sources */,
+				064D4D6F1E4362BC004F05AF /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
