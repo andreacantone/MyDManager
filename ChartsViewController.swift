@@ -9,8 +9,49 @@ import UIKit
 import Charts
 
 var disclaimerHasBeenDisplayed = false
+struct Giorno{
+    var nGiorno : Int = 0
+    var values : [Double] = []
+}
+
+struct Settimana{
+    var nSettimana : Int = 0
+    var giorni = [Giorno](repeating: Giorno(), count: 7)
+}
+
+struct Mese{
+    var nMese : Int = 0
+    var settimane = [Settimana](repeating: Settimana(), count: 5)
+}
+
+struct Anno{
+    var nAnno : Int = 0
+    var mesi = [Mese](repeating: Mese(), count: 12)
+}
+
+
+func inizialize_year()->Anno{
+    let data = Date()
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.year, .month, .day], from: data)
+    let year:Int =  components.year!
+    var ANNO = Anno()
+    ANNO.nAnno = year
+    for i in 0...11{
+        ANNO.mesi[i].nMese = i + 1
+        for j in 0...4{
+            ANNO.mesi[i].settimane[j].nSettimana = j+1
+            for k in 0...6{
+                ANNO.mesi[i].settimane[j].giorni[k].nGiorno = k+1
+                ANNO.mesi[i].settimane[j].giorni[k].values = []
+            }
+        }
+    }
+    return ANNO
+}
 
 class ChartViewController: UIViewController, UITextFieldDelegate{
+
     
     @IBOutlet weak var Salva: UIButton!
     @IBOutlet weak var valore: UITextField!
@@ -51,6 +92,8 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             let alertController = UIAlertController(title: "Attention!", message: "Insert a valid value!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
+            print(MyVariable.usr_logged.email)
+
         }
         
     }
@@ -113,46 +156,7 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
         
     }
     
-    struct Giorno{
-        var nGiorno : Int = 0
-        var values : [Double] = []
-    }
-    
-    struct Settimana{
-        var nSettimana : Int = 0
-        var giorni = [Giorno](repeating: Giorno(), count: 7)
-    }
-    
-    struct Mese{
-        var nMese : Int = 0
-        var settimane = [Settimana](repeating: Settimana(), count: 5)
-    }
-    
-    struct Anno{
-        var nAnno : Int = 0
-        var mesi = [Mese](repeating: Mese(), count: 12)
-    }
-    
-    
-    func inizialize_year()->Anno{
-        let data = Date()
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: data)
-        let year:Int =  components.year!
-        var ANNO = Anno()
-        ANNO.nAnno = year
-        for i in 0...11{
-            ANNO.mesi[i].nMese = i + 1
-            for j in 0...4{
-                ANNO.mesi[i].settimane[j].nSettimana = j+1
-                for k in 0...6{
-                    ANNO.mesi[i].settimane[j].giorni[k].nGiorno = k+1
-                    ANNO.mesi[i].settimane[j].giorni[k].values = []
-                }
-            }
-        }
-        return ANNO
-    }
+
     
     func average(nums: [Double]) -> Double {
         if nums.isEmpty{return 0.00}
