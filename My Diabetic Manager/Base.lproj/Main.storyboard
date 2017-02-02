@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96Q-1g-1rs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="96Q-1g-1rs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="1856.8" y="-288.30584707646182"/>
         </scene>
-        <!--Food-->
+        <!--Courses-->
         <scene sceneID="gUn-Nh-MMi">
             <objects>
                 <tableViewController id="wuR-x9-hrf" customClass="MenuTableViewController" customModule="My_Diabetic_Manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Food" image="Food Icon" id="6SB-Ou-X7W"/>
-                    <navigationItem key="navigationItem" id="LbF-5z-CAz"/>
+                    <navigationItem key="navigationItem" title="Courses" id="LbF-5z-CAz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAK-BL-Dke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -477,7 +477,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFi-Oz-EIF">
                                         <rect key="frame" x="208" y="88" width="93" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.48989819945491964" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="ADD">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -867,14 +867,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-9i-S7r">
-                                        <rect key="frame" x="146" y="-23" width="203" height="30"/>
+                                        <rect key="frame" x="142" y="-15" width="225" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
-                                        <state key="normal" title="Change Profile Picture">
+                                        <state key="normal" title="Choose picture from Library">
                                             <color key="titleColor" red="0.0" green="0.20022653039999999" blue="0.4264289141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="shootPhoto:" destination="qQM-rM-cqC" eventType="touchUpInside" id="mW6-Tn-cmb"/>
+                                            <action selector="photolibraryaction:" destination="qQM-rM-cqC" eventType="touchUpInside" id="vv6-IW-7AR"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthdate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbJ-RU-JS0">
@@ -885,6 +885,17 @@
                                         <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4j-ZJ-AgO">
+                                        <rect key="frame" x="153" y="-51" width="203" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                        <state key="normal" title="Take a picture">
+                                            <color key="titleColor" red="0.0" green="0.20022653039999999" blue="0.4264289141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="camerabuttonaction:" destination="qQM-rM-cqC" eventType="touchUpInside" id="Wue-so-fjw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -892,11 +903,14 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Edit" id="dGi-Ke-wgY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oNG-fQ-kum"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oNG-fQ-kum">
+                            <connections>
+                                <action selector="save:" destination="qQM-rM-cqC" id="zBf-9U-PzH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="myImageView" destination="15V-O3-UGy" id="Wvq-oE-C4j"/>
                         <outlet property="newB" destination="lbJ-RU-JS0" id="Dxy-2t-ka3"/>
                         <outlet property="newE" destination="zDB-8V-R5L" id="P9b-XF-23p"/>
                         <outlet property="newI" destination="mwM-JS-u5e" id="Tat-HN-Khc"/>
@@ -904,6 +918,7 @@
                         <outlet property="newN" destination="r0B-Ri-ACk" id="cmS-YO-2wY"/>
                         <outlet property="newP" destination="5nK-Fa-Jna" id="uSc-dl-3En"/>
                         <outlet property="newS" destination="aCl-KN-8Kr" id="oPc-wu-evl"/>
+                        <outlet property="pickedImaged" destination="15V-O3-UGy" id="k2J-eE-u9Q"/>
                         <outlet property="save" destination="oNG-fQ-kum" id="HSs-hB-x0Y"/>
                     </connections>
                 </viewController>
