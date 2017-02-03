@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIScrollViewDelegate,UIViewControllerTra
             featureArray=[pasta_mini,pasta_mid,pasta_max]
         case "Rice salad":
             featureArray=[insa_riso_mini,insa_riso_mid,insa_riso_max]
-        case "Lasagne":
+        case "Lasagna":
             featureArray=[lasagne_mini,lasagne_mid,lasagne_max]
         case "Roast chicken":
             featureArray=[pollo_arrosto]

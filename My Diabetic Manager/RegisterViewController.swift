@@ -27,6 +27,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         userEmailTextField.delegate = self
         userPasswordTextField.delegate = self
         userPasswordTextField.delegate = self
+       
+       
         // Do any additional setup after loading the view.
     }
     

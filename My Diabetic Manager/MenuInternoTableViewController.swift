@@ -51,9 +51,9 @@ class MenuInternoTableViewController: UITableViewController {
         ]
     
     var secondCourses = [
-        secondCourse(nome: "Roast chicken", immagine: "chicken"),
-        secondCourse(nome: "Cutlet", immagine: "cotoletta"),
-        secondCourse(nome: "Hamburger", immagine: "hamburger"),
+        secondCourse(nome: "Roast chicken", immagine: "19"),
+        secondCourse(nome: "Cutlet", immagine: "20"),
+        secondCourse(nome: "Hamburger", immagine: "21"),
         ]
     
     var drinks = [
@@ -63,27 +63,27 @@ class MenuInternoTableViewController: UITableViewController {
         ]
     
     var sideCourses = [
-        sideCourse(nome: "Chickpeas", immagine: ""),
-        sideCourse(nome: "Beans", immagine: ""),
-        sideCourse(nome: "Peas", immagine: ""),
+        sideCourse(nome: "Chickpeas", immagine: "11"),
+        sideCourse(nome: "Beans", immagine: "13"),
+        sideCourse(nome: "Peas", immagine: "17"),
         ]
     
     var sandAndPizzas = [
-        sandAndPizza(nome: "Cheesburger", immagine: ""),
-        sandAndPizza(nome: "Pizza Margherita", immagine: ""),
-        sandAndPizza(nome: "Hot Dog", immagine: ""),
+        sandAndPizza(nome: "Cheesburger", immagine: "23"),
+        sandAndPizza(nome: "Pizza Margherita", immagine: "24"),
+        sandAndPizza(nome: "Hot Dog", immagine: "22"),
         ]
     
     var fruits = [
-        fruit(nome: "Watermelon", immagine: "watermelon"),
-        fruit(nome: "Banana", immagine: "banana"),
-        fruit(nome: "Orange", immagine: "orange"),
+        fruit(nome: "Watermelon", immagine: "25"),
+        fruit(nome: "Banana", immagine: "27"),
+        fruit(nome: "Orange", immagine: "26"),
         ]
     
     var desserts = [
-        dessert(nome: "Sicilian cassata", immagine: ""),
-        dessert(nome: "Napolitan pastiera", immagine: ""),
-        dessert(nome: "Chocolate croissant", immagine: ""),
+        dessert(nome: "Sicilian cassata", immagine: "28"),
+        dessert(nome: "Napolitan pastiera", immagine: "29"),
+        dessert(nome: "Chocolate croissant", immagine: "30"),
         ]
     
     let searchController = UISearchController(searchResultsController: nil)

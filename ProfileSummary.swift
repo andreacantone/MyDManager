@@ -53,7 +53,7 @@ class ProfileSummary: UIViewController {
         OminoImage.layer.cornerRadius = OminoImage.frame.size.height/2
         OminoImage.layer.cornerRadius = OminoImage.frame.size.width/2
         OminoImage.clipsToBounds = true
-        OminoImage.image = UIImage(named: "ominopc")
+        OminoImage.image = UIImage(named: "Simba")
         OminoImage.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
 
         //Label per valori glicemici
