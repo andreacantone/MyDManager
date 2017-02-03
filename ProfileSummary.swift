@@ -17,14 +17,14 @@ class ProfileSummary: UIViewController {
     @IBOutlet var LoggedAverage: UILabel!
     
     //DA VEDERE se fisso o se deve funzionare il log in
-    var Name = "Anna"
+    var Name:String = "Anna"
     var Surname = "Belardo"
     var ICHO = "12"
-    var Email = "anna.belardo94@gmail.com"
+    var Email = "anna@belardo.it"
     var Birthdate = "02/09/1994"
-    var Password = "raffaelegay"
+    var Password = "password"
     //ENZO FAI COSE A QUESTA VARIABILE
-    var Average = "14"
+    var Average = "8"
     
     
     
@@ -53,7 +53,7 @@ class ProfileSummary: UIViewController {
         OminoImage.layer.cornerRadius = OminoImage.frame.size.height/2
         OminoImage.layer.cornerRadius = OminoImage.frame.size.width/2
         OminoImage.clipsToBounds = true
-        OminoImage.image = UIImage(named: "ominopc")
+        OminoImage.image = UIImage(named: "Simba")
         OminoImage.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
 
         //Label per valori glicemici

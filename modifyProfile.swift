@@ -43,8 +43,8 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         newIm.layer.cornerRadius = newIm.frame.size.width/2
         newIm.clipsToBounds = true
         newIm.layer.borderColor = hexStringToUIColor(hex: "034f84").cgColor
-        newIm.image = UIImage(named: "ominopc")
         newIm.image = UIImage (named: newImage)
+        pickedImaged.image = UIImage ( named: "Simba")
         /*
         super.viewDidLoad()
         picker.delegate = self
@@ -128,6 +128,18 @@ class modifyProfile: UIViewController , UIImagePickerControllerDelegate, UINavig
         alertController.addAction(defaultAction)
         present (alertController, animated: true, completion: nil)
     }
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProfileSummary"{
+            let destinationController = segue.destination as! ProfileSummary
+            destinationController.Name = newName
+            destinationController.Surname = newSurname
+            destinationController.ICHO = newICHO
+            destinationController.OminoImage =
+            
+        }
+    }*/
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

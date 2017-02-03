@@ -85,6 +85,8 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
                 period = support_day
                 let values = current_year.mesi[mese_c-1].settimane[sett_c-1].giorni[giorno_c-1].values
                 setChart(dataEntryX: period, dataEntryY: values)
+                UserDefaults.standard.set(String(average(nums: values)), forKey: "average")
+                UserDefaults.standard.synchronize()
                 textLabel.text = String(average(nums: values))
             }
         }
@@ -92,7 +94,6 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             let alertController = UIAlertController(title: "Attention!", message: "Insert a valid value!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            print(MyVariable.usr_logged.email)
 
         }
         
@@ -214,6 +215,15 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
         axisFormatDelegate = self
         valore.delegate = self
         todayLabel.text = returnDate()
+        //cerchio bottone
+        Salva.layer.borderWidth = 0.5
+        Salva.layer.cornerRadius = 7
+        Salva.layer.borderColor = UIColor.lightGray.cgColor
+        textLabel.layer.borderWidth = 0.5
+        textLabel.layer.cornerRadius = 7
+        textLabel.layer.borderColor = UIColor.lightGray.cgColor
+        textLabel.layer.backgroundColor = hexStringToUIColor(hex: "EBEBF1").cgColor
+        
         // Do any additional setup after loading the view.
     }
     
@@ -271,3 +281,27 @@ extension ChartViewController: IAxisValueFormatter {
         return period[Int(value)]
     }
 }
+
+// converte codice colori
+func hexStringToUIColor (hex:String) -> UIColor {
+    var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+    
+    if (cString.hasPrefix("#")) {
+        cString.remove(at: cString.startIndex)
+    }
+    
+    if ((cString.characters.count) != 6) {
+        return UIColor.gray
+    }
+    
+    var rgbValue:UInt32 = 0
+    Scanner(string: cString).scanHexInt32(&rgbValue)
+    
+    return UIColor(
+        red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+        green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+        blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+        alpha: CGFloat(1.0)
+    )
+}
+

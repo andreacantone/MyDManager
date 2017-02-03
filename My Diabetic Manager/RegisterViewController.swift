@@ -10,7 +10,10 @@ import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate{
     
-
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var ratioTextField: UITextField!
+    @IBOutlet weak var bDayPicker: UIDatePicker!
     
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
@@ -24,6 +27,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         userEmailTextField.delegate = self
         userPasswordTextField.delegate = self
         userPasswordTextField.delegate = self
+       
+       
         // Do any additional setup after loading the view.
     }
     
@@ -43,6 +48,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;
         let userRepeatPassword = repeatPasswordTextField.text;
+        let userName = userNameTextField.text
+        let userSurnme = surnameTextField.text
+        let ratio = ratioTextField.text
+        
+        let date = bDayPicker.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateString = dateFormatter.string(from: date)
         
         // Check for empty fields
         if((userEmail!.isEmpty) || (userPassword?.isEmpty)! || (userRepeatPassword?.isEmpty)!)
@@ -80,18 +93,27 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             print("Could not unarchive from profili")
             return
         }
-        profilesArray.append(ProfiloUtente(email: userEmail!, password: userPassword!))
-        
+        let newProfilo = ProfiloUtente(email: userEmail!, password: userPassword!, name: userName!, surname: userSurnme!, ratio: ratio!, bday: dateString)
+        profilesArray.append(newProfilo)
+        let average: String = ""
             let profiliData = NSKeyedArchiver.archivedData(withRootObject: profilesArray)
             UserDefaults.standard.set(profiliData, forKey: "PROFILI")
+            UserDefaults.standard.set(newProfilo.name, forKey: "name")
+            UserDefaults.standard.set(newProfilo.surname, forKey: "surname")
+            UserDefaults.standard.set(newProfilo.ratio, forKey: "ratio")
+            UserDefaults.standard.set(newProfilo.bday, forKey: "birthday")
+            UserDefaults.standard.set(newProfilo.email, forKey: "email")
+            UserDefaults.standard.set(newProfilo.password, forKey: "password")
+            UserDefaults.standard.set(average, forKey: "average")
             UserDefaults.standard.synchronize()
 
         
         let myAlert = UIAlertController(title:"ALERT", message: "Registration complete!", preferredStyle:UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "CHIUDI", style: UIAlertActionStyle.default, handler:
-            {(paramAction:UIAlertAction!) in
+            {
+                (paramAction:UIAlertAction!) in
                 self.dismiss(animated: true, completion: nil)
-        }
+            }
         )
         myAlert.addAction(action)
         self.present(myAlert, animated:true, completion:nil)
