@@ -716,7 +716,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonTapped:" destination="8vP-SQ-VNE" eventType="touchUpInside" id="ht2-UX-fh8"/>
+                                    <action selector="loginButtonTapped:" destination="8vP-SQ-VNE" eventType="touchUpInside" id="KRh-35-wej"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqF-jc-Ytj">
@@ -752,8 +752,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="jvz-Wi-SRT"/>
                     <connections>
-                        <outlet property="userEmailTextField" destination="Z5o-ai-sfF" id="1sI-Np-Iis"/>
-                        <outlet property="userPasswordTextField" destination="FqF-jc-Ytj" id="Ofg-II-2C5"/>
+                        <outlet property="userEmailTextField" destination="Z5o-ai-sfF" id="oCV-Xm-YJg"/>
+                        <outlet property="userPasswordTextField" destination="FqF-jc-Ytj" id="1ik-jz-aSb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxs-hT-CAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
