@@ -20,6 +20,9 @@
 		AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E937B1E43369300928B4D /* ChartsViewController.swift */; };
 		ACD8E9BD1E43EC2900866DA4 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD8E9B81E43EC2200866DA4 /* Charts.framework */; };
 		ACD8E9BE1E43EC2900866DA4 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD8E9B81E43EC2200866DA4 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACD8E9C21E4498A300866DA4 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8E9C11E4498A300866DA4 /* CalendarViewController.swift */; };
+		ACD8E9C41E44A7E300866DA4 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8E9C31E44A7E300866DA4 /* CalendarTableViewController.swift */; };
+		ACD8E9C61E44A92700866DA4 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8E9C51E44A92700866DA4 /* EventTableViewCell.swift */; };
 		ACF8D0B21E43DED3005D6858 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */; };
 		ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */; };
 		ACF8D0B61E43DEDF005D6858 /* ProfiloUtente.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */; };
@@ -94,6 +97,9 @@
 		AC9E93441E427A4C00928B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9E937B1E43369300928B4D /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Librerie esterne/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		ACD8E9C11E4498A300866DA4 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		ACD8E9C31E44A7E300866DA4 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
+		ACD8E9C51E44A92700866DA4 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		ACF8D0B11E43DED3005D6858 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		ACF8D0B31E43DEDA005D6858 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ACF8D0B51E43DEDF005D6858 /* ProfiloUtente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfiloUtente.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 		AC9E934B1E427D8900928B4D /* My Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8E9C11E4498A300866DA4 /* CalendarViewController.swift */,
+				ACD8E9C31E44A7E300866DA4 /* CalendarTableViewController.swift */,
+				ACD8E9C51E44A92700866DA4 /* EventTableViewCell.swift */,
 			);
 			name = "My Calendar";
 			path = ..;
@@ -350,6 +359,9 @@
 				AC9E937C1E43369300928B4D /* ChartsViewController.swift in Sources */,
 				AC9E933B1E427A4C00928B4D /* ViewTabBarController.swift in Sources */,
 				AC9E93391E427A4C00928B4D /* AppDelegate.swift in Sources */,
+				ACD8E9C41E44A7E300866DA4 /* CalendarTableViewController.swift in Sources */,
+				ACD8E9C21E4498A300866DA4 /* CalendarViewController.swift in Sources */,
+				ACD8E9C61E44A92700866DA4 /* EventTableViewCell.swift in Sources */,
 				DE0D0C131E4287ED00F0861A /* MenuInternoTableViewController.swift in Sources */,
 				ACF8D0B41E43DEDA005D6858 /* RegisterViewController.swift in Sources */,
 				DE0D0C151E42883000F0861A /* SourceTableViewCell.swift in Sources */,
