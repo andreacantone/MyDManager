@@ -92,7 +92,6 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             let alertController = UIAlertController(title: "Attention!", message: "Insert a valid value!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            print(MyVariable.usr_logged.email)
 
         }
         
