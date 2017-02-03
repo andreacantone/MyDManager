@@ -85,6 +85,8 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
                 period = support_day
                 let values = current_year.mesi[mese_c-1].settimane[sett_c-1].giorni[giorno_c-1].values
                 setChart(dataEntryX: period, dataEntryY: values)
+                UserDefaults.standard.set(String(average(nums: values)), forKey: "average")
+                UserDefaults.standard.synchronize()
                 textLabel.text = String(average(nums: values))
             }
         }
@@ -92,8 +94,6 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
             let alertController = UIAlertController(title: "Attention!", message: "Insert a valid value!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            print(MyVariable.usr_logged.email)
-
         }
         
     }

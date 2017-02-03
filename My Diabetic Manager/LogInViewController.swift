@@ -8,10 +8,6 @@
 
 import UIKit
 
-struct MyVariable {
-    static var usr_logged = ProfiloUtente(email: "", password: "")
-}
-
 
 class LogInViewController: UIViewController, UITextFieldDelegate{
         
@@ -80,11 +76,8 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
                     UserDefaults.standard.set(true,forKey:"isUserLoggedIn");
                     UserDefaults.standard.synchronize();
                     self.dismiss(animated: true, completion:nil);
-                    MyVariable.usr_logged = user
-                    return
                 }
             }
-            
         }
      
         /*
