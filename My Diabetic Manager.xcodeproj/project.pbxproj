@@ -36,30 +36,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CD3C7D01E4393D90030CA39 /* PBXContainerItemProxy */ = {
+		ACD8E9B71E43EC2200866DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */;
+			containerPortal = ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		3CD3C7D21E4393D90030CA39 /* PBXContainerItemProxy */ = {
+		ACD8E9B91E43EC2200866DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */;
+			containerPortal = ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		3CD3C7D41E4393D90030CA39 /* PBXContainerItemProxy */ = {
+		ACD8E9BB1E43EC2200866DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */;
+			containerPortal = ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		3CD3C7D81E43943E0030CA39 /* PBXContainerItemProxy */ = {
+		ACD8E9BF1E43EC2900866DA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */;
+			containerPortal = ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
@@ -73,7 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3CD3C7D71E43943E0030CA39 /* Charts.framework in Embed Frameworks */,
+				ACD8E9BE1E43EC2900866DA4 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD3C7D61E43943E0030CA39 /* Charts.framework in Frameworks */,
+				ACD8E9BD1E43EC2900866DA4 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 			children = (
 				AC9E93371E427A4C00928B4D /* My Diabetic Manager */,
 				AC9E93361E427A4C00928B4D /* Products */,
-				3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */,
+				ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +252,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3CD3C7D91E43943E0030CA39 /* PBXTargetDependency */,
+				ACD8E9C01E43EC2900866DA4 /* PBXTargetDependency */,
 			);
 			name = "My Diabetic Manager";
 			productName = "My Diabetic Manager";
@@ -289,8 +289,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3CD3C7CB1E4393D80030CA39 /* Products */;
-					ProjectRef = 3CD3C7CA1E4393D80030CA39 /* Charts.xcodeproj */;
+					ProductGroup = ACD8E9B21E43EC2200866DA4 /* Products */;
+					ProjectRef = ACD8E9B11E43EC2200866DA4 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -301,25 +301,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3CD3C7D11E4393D90030CA39 /* Charts.framework */ = {
+		ACD8E9B81E43EC2200866DA4 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 3CD3C7D01E4393D90030CA39 /* PBXContainerItemProxy */;
+			remoteRef = ACD8E9B71E43EC2200866DA4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3CD3C7D31E4393D90030CA39 /* ChartsRealm.framework */ = {
+		ACD8E9BA1E43EC2200866DA4 /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = 3CD3C7D21E4393D90030CA39 /* PBXContainerItemProxy */;
+			remoteRef = ACD8E9B91E43EC2200866DA4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3CD3C7D51E4393D90030CA39 /* ChartsTests.xctest */ = {
+		ACD8E9BC1E43EC2200866DA4 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 3CD3C7D41E4393D90030CA39 /* PBXContainerItemProxy */;
+			remoteRef = ACD8E9BB1E43EC2200866DA4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -367,10 +367,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CD3C7D91E43943E0030CA39 /* PBXTargetDependency */ = {
+		ACD8E9C01E43EC2900866DA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = 3CD3C7D81E43943E0030CA39 /* PBXContainerItemProxy */;
+			targetProxy = ACD8E9BF1E43EC2900866DA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -15,6 +15,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
         
         @IBOutlet weak var userEmailTextField: UITextField!
         @IBOutlet weak var userPasswordTextField: UITextField!
+        @IBOutlet weak var logoimage: UIImageView!
         
         override func viewDidLoad() {
             userEmailTextField.clearButtonMode = .whileEditing
@@ -22,6 +23,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
             super.viewDidLoad()
             userEmailTextField.delegate = self
             userPasswordTextField.delegate = self
+            logoimage.image=UIImage(named:"logo")
 
             
             // Do any additional setup after loading the view.
