@@ -85,6 +85,8 @@ class ChartViewController: UIViewController, UITextFieldDelegate{
                 period = support_day
                 let values = current_year.mesi[mese_c-1].settimane[sett_c-1].giorni[giorno_c-1].values
                 setChart(dataEntryX: period, dataEntryY: values)
+                UserDefaults.standard.set(String(average(nums: values)), forKey: "average")
+                UserDefaults.standard.synchronize()
                 textLabel.text = String(average(nums: values))
             }
         }

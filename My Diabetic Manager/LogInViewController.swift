@@ -81,7 +81,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
                     return
                 }
             }
-            
         }
      
         /*
