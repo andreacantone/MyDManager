@@ -22,6 +22,9 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         printEvents()
+        note.layer.borderWidth = 0.5
+        note.layer.cornerRadius = 7
+        note.layer.borderColor = UIColor.lightGray.cgColor
         // Do any additional setup after loading the view.
     }
 

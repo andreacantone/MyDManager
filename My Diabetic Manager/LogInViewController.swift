@@ -17,6 +17,9 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
         @IBOutlet weak var userPasswordTextField: UITextField!
         @IBOutlet weak var logoimage: UIImageView!
         
+        @IBOutlet weak var loginbutton: UIButton!
+    
+        @IBOutlet weak var registerbutt: UIButton!
         override func viewDidLoad() {
             userEmailTextField.clearButtonMode = .whileEditing
             userPasswordTextField.clearButtonMode = .whileEditing
@@ -24,7 +27,12 @@ class LogInViewController: UIViewController, UITextFieldDelegate{
             userEmailTextField.delegate = self
             userPasswordTextField.delegate = self
             logoimage.image=UIImage(named:"logo")
-
+            loginbutton.layer.cornerRadius = 7
+            loginbutton.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+            registerbutt.layer.cornerRadius = 7
+            registerbutt.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+            
+            
             
             // Do any additional setup after loading the view.
         }

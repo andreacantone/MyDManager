@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -131,62 +134,64 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGX-zL-rei">
-                                <rect key="frame" x="16" y="438" width="343" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFz-Qo-M8d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFz-Qo-M8d">
                                 <rect key="frame" x="16" y="72" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjH-co-ZWb">
-                                <rect key="frame" x="16" y="189" width="343" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjH-co-ZWb">
+                                <rect key="frame" x="16" y="172" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-TJ-E8n">
-                                <rect key="frame" x="16" y="122" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6T-TJ-E8n">
+                                <rect key="frame" x="16" y="121" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eNN-3Z-Euw">
-                                <rect key="frame" x="16" y="487" width="343" height="128"/>
+                                <rect key="frame" x="16" y="485" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XaG-2U-XO5">
-                                <rect key="frame" x="0.0" y="225" width="375" height="82"/>
+                                <rect key="frame" x="0.0" y="222" width="375" height="82"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="507740508.44354999">
                                     <!--2017-02-02 15:01:48 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCn-qk-qUH">
-                                <rect key="frame" x="16" y="323" width="95" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCn-qk-qUH">
+                                <rect key="frame" x="16" y="321" width="95" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fYj-z2-t0K">
-                                <rect key="frame" x="16" y="367" width="343" height="86"/>
+                                <rect key="frame" x="16" y="365" width="343" height="86"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="507812211.95873201">
                                     <!--2017-02-03 10:56:51 +0000-->
                                 </date>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGX-zL-rei">
+                                <rect key="frame" x="16" y="444" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -325,78 +330,108 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="395"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adu-5d-Tbl">
-                                <rect key="frame" x="0.0" y="520" width="168" height="30"/>
-                                <state key="normal" title="REMOVE FROM BASKET"/>
+                                <rect key="frame" x="9" y="477" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dy1-jZ-JF1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                <state key="normal" title="Remove Portion">
+                                    <color key="titleColor" red="1" green="0.99102434959999997" blue="0.99581628720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="uncheck_push:" destination="Xnh-bH-9TK" eventType="touchUpInside" id="ETs-1r-2tg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVh-ct-CMD">
-                                <rect key="frame" x="0.0" y="558" width="139" height="30"/>
-                                <state key="normal" title="CALCOLATE"/>
+                                <rect key="frame" x="126" y="521" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5hs-3B-eyl"/>
+                                    <constraint firstAttribute="width" constant="122" id="rtN-hc-WSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                <state key="normal" title="Calculate Insulin">
+                                    <color key="titleColor" red="1" green="0.99102434959999997" blue="0.99581628720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="calcola_action:" destination="Xnh-bH-9TK" eventType="touchUpInside" id="grd-4W-zrC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh6-15-CoI">
-                                <rect key="frame" x="144" y="588" width="86" height="30"/>
-                                <state key="normal" title="CHECK OUT"/>
+                                <rect key="frame" x="273" y="580" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="aL7-7J-I9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                <state key="normal" title="Check Out">
+                                    <color key="titleColor" red="1" green="0.99102434959999997" blue="0.99581628720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="menu_check:" destination="Xnh-bH-9TK" eventType="touchUpInside" id="pZ2-EI-Iol"/>
                                     <segue destination="pOp-cb-6VD" kind="show" id="70M-yz-bB6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwD-i3-Raj">
-                                <rect key="frame" x="188" y="524" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OL-eS-geG">
-                                <rect key="frame" x="188" y="554" width="42" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwD-i3-Raj">
+                                <rect key="frame" x="166" y="471" width="42" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="4ap-8g-Qtf"/>
+                                    <constraint firstAttribute="height" constant="32" id="6A0-uB-lMx"/>
+                                    <constraint firstAttribute="width" constant="42" id="FEp-PU-Siv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owg-hh-1uJ">
-                                <rect key="frame" x="214" y="520" width="161" height="30"/>
-                                <state key="normal" title="ADD TO BASKET"/>
-                                <connections>
-                                    <action selector="push_check:" destination="Xnh-bH-9TK" eventType="touchUpInside" id="m0T-Sg-4h2"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OL-eS-geG">
+                                <rect key="frame" x="166" y="554" width="42" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="gzP-ur-fMM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0tv-eA-iqy">
                                 <rect key="frame" x="168" y="429" width="39" height="37"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owg-hh-1uJ">
+                                <rect key="frame" x="237" y="477" width="122" height="30"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                <state key="normal" title="Add Portion">
+                                    <color key="titleColor" red="1" green="0.99102434959999997" blue="0.99581628720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="push_check:" destination="Xnh-bH-9TK" eventType="touchUpInside" id="m0T-Sg-4h2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="adu-5d-Tbl" firstAttribute="baseline" secondItem="lwD-i3-Raj" secondAttribute="baseline" id="2vg-tH-kOw"/>
-                            <constraint firstItem="wfF-vx-7sM" firstAttribute="leading" secondItem="CFI-NN-34y" secondAttribute="leading" id="36x-0p-rjh"/>
-                            <constraint firstItem="wfF-vx-7sM" firstAttribute="leading" secondItem="adu-5d-Tbl" secondAttribute="leading" id="6AI-Yf-ufS"/>
-                            <constraint firstItem="adu-5d-Tbl" firstAttribute="leading" secondItem="hVh-ct-CMD" secondAttribute="leading" id="AqQ-BO-SdK"/>
-                            <constraint firstItem="0tv-eA-iqy" firstAttribute="top" secondItem="wfF-vx-7sM" secondAttribute="bottom" constant="34" id="DLs-Ph-YZA"/>
-                            <constraint firstItem="wfF-vx-7sM" firstAttribute="top" secondItem="AH3-5n-fiz" secondAttribute="bottom" constant="-64" id="QJ2-eS-NrV"/>
-                            <constraint firstItem="wfF-vx-7sM" firstAttribute="centerX" secondItem="0tv-eA-iqy" secondAttribute="centerX" id="R0C-PT-zf4"/>
-                            <constraint firstItem="lwD-i3-Raj" firstAttribute="baseline" secondItem="owg-hh-1uJ" secondAttribute="baseline" id="VGN-Cf-Gi4"/>
-                            <constraint firstItem="2OL-eS-geG" firstAttribute="leading" secondItem="hVh-ct-CMD" secondAttribute="trailing" constant="49" id="XvT-vI-TGy"/>
-                            <constraint firstItem="2OL-eS-geG" firstAttribute="trailing" secondItem="Wh6-15-CoI" secondAttribute="trailing" id="Zfv-hr-CAH"/>
-                            <constraint firstItem="wfF-vx-7sM" firstAttribute="trailing" secondItem="owg-hh-1uJ" secondAttribute="trailing" id="aJ3-o9-6Vq"/>
-                            <constraint firstItem="lwD-i3-Raj" firstAttribute="leading" secondItem="2OL-eS-geG" secondAttribute="leading" id="ade-Zd-Y8Q"/>
-                            <constraint firstItem="hVh-ct-CMD" firstAttribute="top" secondItem="adu-5d-Tbl" secondAttribute="bottom" constant="8" symbolic="YES" id="aeo-Oc-G4l"/>
-                            <constraint firstItem="0tv-eA-iqy" firstAttribute="centerX" secondItem="Wh6-15-CoI" secondAttribute="centerX" id="bcc-3Z-Ciq"/>
-                            <constraint firstItem="Wh6-15-CoI" firstAttribute="bottom" secondItem="pnF-R7-Lwz" secondAttribute="top" id="byT-fu-X12"/>
-                            <constraint firstItem="2OL-eS-geG" firstAttribute="top" secondItem="lwD-i3-Raj" secondAttribute="bottom" constant="9" id="cOA-Fx-gC1"/>
-                            <constraint firstItem="Wh6-15-CoI" firstAttribute="top" secondItem="2OL-eS-geG" secondAttribute="bottom" constant="8" symbolic="YES" id="dg3-7f-T1B"/>
-                            <constraint firstItem="owg-hh-1uJ" firstAttribute="leading" secondItem="lwD-i3-Raj" secondAttribute="trailing" constant="15" id="fxJ-fd-nA5"/>
-                            <constraint firstAttribute="trailing" secondItem="wfF-vx-7sM" secondAttribute="trailing" id="jiQ-UE-hxG"/>
-                            <constraint firstAttribute="bottom" secondItem="0tv-eA-iqy" secondAttribute="bottom" constant="152" id="mbg-P5-O2p"/>
+                            <constraint firstItem="owg-hh-1uJ" firstAttribute="trailing" secondItem="CFI-NN-34y" secondAttribute="trailingMargin" id="1dD-QT-BBO"/>
+                            <constraint firstItem="2OL-eS-geG" firstAttribute="top" secondItem="hVh-ct-CMD" secondAttribute="bottom" constant="3" id="2Z7-uz-dra"/>
+                            <constraint firstItem="owg-hh-1uJ" firstAttribute="leading" secondItem="lwD-i3-Raj" secondAttribute="trailing" constant="29" id="3vd-SZ-Kh9"/>
+                            <constraint firstItem="hVh-ct-CMD" firstAttribute="centerX" secondItem="2OL-eS-geG" secondAttribute="centerX" id="7cE-Zu-y68"/>
+                            <constraint firstItem="owg-hh-1uJ" firstAttribute="trailing" secondItem="Wh6-15-CoI" secondAttribute="trailing" id="DJH-m2-8lz"/>
+                            <constraint firstItem="pnF-R7-Lwz" firstAttribute="top" secondItem="Wh6-15-CoI" secondAttribute="bottom" constant="8" symbolic="YES" id="DsI-8o-FWA"/>
+                            <constraint firstItem="0tv-eA-iqy" firstAttribute="top" secondItem="wfF-vx-7sM" secondAttribute="bottom" constant="34" id="JNJ-OG-se5"/>
+                            <constraint firstItem="wfF-vx-7sM" firstAttribute="leading" secondItem="CFI-NN-34y" secondAttribute="leading" id="K3d-7G-gOV"/>
+                            <constraint firstAttribute="trailing" secondItem="wfF-vx-7sM" secondAttribute="trailing" id="Ltm-6j-iYn"/>
+                            <constraint firstItem="lwD-i3-Raj" firstAttribute="leading" secondItem="2OL-eS-geG" secondAttribute="leading" id="MHq-T9-Mhc"/>
+                            <constraint firstItem="0tv-eA-iqy" firstAttribute="centerX" secondItem="lwD-i3-Raj" secondAttribute="centerX" id="MfV-oR-fwD"/>
+                            <constraint firstItem="Wh6-15-CoI" firstAttribute="top" secondItem="owg-hh-1uJ" secondAttribute="bottom" constant="73" id="PZ9-lS-eK6"/>
+                            <constraint firstItem="hVh-ct-CMD" firstAttribute="top" secondItem="owg-hh-1uJ" secondAttribute="bottom" constant="14" id="QQP-Ky-ggK"/>
+                            <constraint firstItem="adu-5d-Tbl" firstAttribute="leading" secondItem="CFI-NN-34y" secondAttribute="leadingMargin" constant="-7" id="Szo-a9-FJN"/>
+                            <constraint firstItem="adu-5d-Tbl" firstAttribute="baseline" secondItem="owg-hh-1uJ" secondAttribute="firstBaseline" id="bwx-wK-p6c"/>
+                            <constraint firstItem="lwD-i3-Raj" firstAttribute="top" secondItem="0tv-eA-iqy" secondAttribute="bottom" constant="5" id="eja-54-L5l"/>
+                            <constraint firstItem="wfF-vx-7sM" firstAttribute="top" secondItem="CFI-NN-34y" secondAttribute="top" id="iWV-Wt-dG8"/>
+                            <constraint firstItem="lwD-i3-Raj" firstAttribute="leading" secondItem="adu-5d-Tbl" secondAttribute="trailing" constant="35" id="nQU-Cm-TI1"/>
+                            <constraint firstItem="adu-5d-Tbl" firstAttribute="top" secondItem="owg-hh-1uJ" secondAttribute="top" id="oxP-1i-a3X"/>
+                            <constraint firstItem="wfF-vx-7sM" firstAttribute="centerX" secondItem="0tv-eA-iqy" secondAttribute="centerX" id="pv2-0f-8eH"/>
+                            <constraint firstItem="pnF-R7-Lwz" firstAttribute="top" secondItem="2OL-eS-geG" secondAttribute="bottom" constant="38" id="rph-xU-zGQ"/>
+                            <constraint firstItem="hVh-ct-CMD" firstAttribute="top" secondItem="lwD-i3-Raj" secondAttribute="bottom" constant="18" id="uTt-6K-hqQ"/>
+                            <constraint firstItem="lwD-i3-Raj" firstAttribute="trailing" secondItem="2OL-eS-geG" secondAttribute="trailing" id="wkw-d3-f4n"/>
+                            <constraint firstItem="owg-hh-1uJ" firstAttribute="baseline" secondItem="adu-5d-Tbl" secondAttribute="firstBaseline" id="xih-ze-Ddk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -848,7 +883,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="jvz-Wi-SRT"/>
                     <connections>
+                        <outlet property="loginbutton" destination="H2e-6D-yTM" id="Kas-Gk-gbl"/>
                         <outlet property="logoimage" destination="UpC-zt-unn" id="Qpn-MW-aPu"/>
+                        <outlet property="registerbutt" destination="fNL-oc-hy2" id="tPf-6V-b5o"/>
                         <outlet property="userEmailTextField" destination="Z5o-ai-sfF" id="oCV-Xm-YJg"/>
                         <outlet property="userPasswordTextField" destination="FqF-jc-Ytj" id="1ik-jz-aSb"/>
                     </connections>
@@ -1039,7 +1076,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LG1-yA-2JR">
-                                <rect key="frame" x="59" y="171" width="270" height="30"/>
+                                <rect key="frame" x="59" y="170" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1047,33 +1084,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-Zd-E7z">
-                                <rect key="frame" x="59" y="334" width="270" height="30"/>
+                                <rect key="frame" x="59" y="333" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-7g-gB6">
-                                <rect key="frame" x="108" y="582" width="171" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                <state key="normal" title="I have an account">
-                                    <color key="titleColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="iHaveAnAccountButtonTapped:" destination="MvR-iY-qI5" eventType="touchUpInside" id="en5-Fp-8xp"/>
-                                </connections>
-                            </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-mM-6NV">
-                                <rect key="frame" x="16" y="386" width="343" height="140"/>
+                                <rect key="frame" x="16" y="426" width="343" height="126"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="507773506.82548201">
                                     <!--2017-02-03 00:11:46 +0000-->
                                 </date>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hHs-4V-50L">
-                                <rect key="frame" x="58" y="67" width="270" height="30"/>
+                                <rect key="frame" x="58" y="66" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1081,7 +1107,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wA-IT-Jud">
-                                <rect key="frame" x="59" y="118" width="270" height="30"/>
+                                <rect key="frame" x="59" y="117" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1089,7 +1115,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ratio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-Zd-rgL">
-                                <rect key="frame" x="58" y="225" width="270" height="30"/>
+                                <rect key="frame" x="58" y="224" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1097,7 +1123,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31V-8r-rh2">
-                                <rect key="frame" x="58" y="280" width="270" height="30"/>
+                                <rect key="frame" x="58" y="279" width="270" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1107,19 +1133,37 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R07-eU-aDA">
                                 <rect key="frame" x="59" y="20" width="270" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj7-45-CEl">
-                                <rect key="frame" x="96" y="534" width="183" height="57"/>
+                                <rect key="frame" x="118" y="552" width="153" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.99102434959999997" blue="0.99581628720000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="MvR-iY-qI5" eventType="touchUpInside" id="C5c-YH-1Bl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birthdate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxs-XK-Nij">
+                                <rect key="frame" x="16" y="410" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-7g-gB6">
+                                <rect key="frame" x="125" y="616" width="138" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <state key="normal" title="I have an account">
+                                    <color key="titleColor" red="0.0" green="0.20000000000000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="iHaveAnAccountButtonTapped:" destination="MvR-iY-qI5" eventType="touchUpInside" id="en5-Fp-8xp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1128,6 +1172,7 @@
                     <connections>
                         <outlet property="bDayPicker" destination="6j0-mM-6NV" id="5qp-KD-ckv"/>
                         <outlet property="ratioTextField" destination="dG8-Zd-rgL" id="dUB-Be-iWE"/>
+                        <outlet property="registrationbutton" destination="lj7-45-CEl" id="hW5-rT-9w0"/>
                         <outlet property="repeatPasswordTextField" destination="HjX-Zd-E7z" id="RjT-4a-EGd"/>
                         <outlet property="surnameTextField" destination="9wA-IT-Jud" id="7fn-rN-e3w"/>
                         <outlet property="userEmailTextField" destination="LG1-yA-2JR" id="zHV-ov-vfd"/>

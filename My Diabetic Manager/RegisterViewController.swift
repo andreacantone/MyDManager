@@ -19,6 +19,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
+    @IBOutlet weak var registrationbutton: UIButton!
+    
     override func viewDidLoad() {
         userEmailTextField.clearButtonMode = .whileEditing
         userPasswordTextField.clearButtonMode = .whileEditing
@@ -27,10 +29,37 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         userEmailTextField.delegate = self
         userPasswordTextField.delegate = self
         userPasswordTextField.delegate = self
+        registrationbutton.layer.cornerRadius = 7
+        registrationbutton.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+        
        
        
+    
         // Do any additional setup after loading the view.
     }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

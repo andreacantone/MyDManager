@@ -33,6 +33,16 @@ class ViewController: UIViewController, UIScrollViewDelegate,UIViewControllerTra
         //   calcola.layer.cornerRadius=calcola.frame.size.width/2
         check_button.layer.cornerRadius=check_button.frame.size.width/2
         uncheck_button.layer.cornerRadius=uncheck_button.frame.size.width/2
+        check_button.layer.cornerRadius = 7
+        check_button.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+        uncheck_button.layer.cornerRadius = 7
+        uncheck_button.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+        menuButton.layer.cornerRadius = 7
+        menuButton.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+        calcola.layer.cornerRadius = 7
+        calcola.layer.backgroundColor = hexStringToUIColor(hex: "007AFF").cgColor
+        
+        
         
         
         
